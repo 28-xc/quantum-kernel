@@ -1,0 +1,14 @@
+{
+  "ch32-transform-28": {
+    "sha256": "6df6b1d47cf190f385d3163ae0139a5699585cf39c37aaa30282e99de031c876",
+    "layout_sha256": "22978dc24d8eb8cafaa3476eca92b1ea306d19b4ecf66c3cd84504f64e230bca"
+  },
+  "ch32-transform-64": {
+    "sha256": "1e291fab19bd1c5023d7ec03e4767eb99562b4ca415d34b015dcd49bbdbfbf3e",
+    "layout_sha256": "77c17cd90901533ceacf0caf07730e1df283db9c975457f841694b8dfa47c8e4"
+  },
+  "ch32-transform-80": {
+    "sha256": "c73a0fe06891253b79a6c86043c1c2f6e3598b7402efc372234946080a0170e1",
+    "layout_sha256": "06a11e6bf680988153dad8442d77028026e9eed9caf204ac689af77a9574a3c7"
+  }
+}

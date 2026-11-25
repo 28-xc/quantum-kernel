@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="workbench-token" content="__CSRF__">
+  <title>Quantum Kernel</title>
+  <link rel="icon" href="/wb/quantum-kernel.png">
+  <link rel="stylesheet" href="/wb/style.css">
+  <script defer src="/wb/views.js"></script><script defer src="/wb/app.js"></script>
+</head>
+<body>
+  <header class="top"><div class="brand"><img class="mark" src="/wb/quantum-kernel.png" alt="" width="32" height="32"><b>Quantum Kernel</b><i></i><span>格运算内核</span></div><div class="live-state" id="top-state" role="status">正在启动</div></header>
+  <div class="layout">
+    <aside><nav aria-label="主导航" id="nav">
+      <a href="#parameters" data-view="parameters"><span aria-hidden="true">☷</span>参数与接口</a>
+      <a href="#crypto" data-view="crypto"><span aria-hidden="true">⌘</span>密码功能</a>
+      <a href="#arithmetic" data-view="arithmetic"><span aria-hidden="true">∑</span>核心算术</a>
+      <a href="#resources" data-view="resources"><span aria-hidden="true">▥</span>性能与资源</a>
+      <a href="#security" data-view="security"><span aria-hidden="true">✓</span>安全检查</a>
+    </nav></aside>
+    <main id="main" tabindex="-1"><section id="heading"></section><div id="config"></div><div id="notice" role="status" aria-live="polite"></div><div id="content"></div></main>
+  </div>
+  <div id="scroll-room" aria-hidden="true"></div>
+  <dialog id="detail"><div class="dialog-title"><h2 id="dialog-title"></h2><button type="button" id="dialog-close" aria-label="关闭">关闭</button></div><div id="dialog-body"></div></dialog>
+</body></html>

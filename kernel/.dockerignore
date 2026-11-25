@@ -1,0 +1,7 @@
+**/__pycache__/
+**/.pytest_cache/
+.git/
+out/
+_build/
+*.zip
+*.tar.gz

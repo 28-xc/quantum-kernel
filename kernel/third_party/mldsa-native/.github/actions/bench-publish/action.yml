@@ -1,0 +1,84 @@
+name: ML-DSA benchmark publisher
+description: Publish cycle counts using the pinned benchmark action.
+inputs:
+  name:
+    description: Benchmark series
+    required: true
+    default: Benchmark
+  tool:
+    description: Result format
+    required: true
+  output-file-path:
+    description: Benchmark TSV path
+    required: true
+  gh-pages-branch:
+    description: Pages branch
+    required: true
+    default: gh-pages
+  gh-repository:
+    description: Results repository
+    required: false
+  benchmark-data-dir-path:
+    description: Chart directory
+    required: true
+    default: dev/bench
+  github-token:
+    description: GitHub access token
+    required: false
+  ref:
+    description: Commit reference
+    required: false
+  auto-push:
+    description: Push the Pages commit
+    required: false
+    default: false
+  skip-fetch-gh-pages:
+    description: Use the local Pages branch
+    required: false
+    default: false
+  comment-always:
+    description: Comment on each result
+    required: false
+    default: false
+  summary-always:
+    description: Include the job summary
+    required: false
+    default: false
+  save-data-file:
+    description: Save the result history
+    required: false
+    default: true
+  comment-on-alert:
+    description: Comment on a regression
+    required: false
+    default: false
+  alert-threshold:
+    description: Alert threshold
+    required: false
+    default: 200%
+  fail-on-alert:
+    description: Fail on a regression
+    required: false
+    default: false
+  fail-threshold:
+    description: Failure threshold
+    required: false
+  alert-comment-cc-users:
+    description: Accounts to notify
+    required: false
+  external-data-xml-path:
+    description: External series history in typed XML
+    required: false
+  external-data-json-path:
+    description: Earlier input name; supply a migrated XML history path
+    required: false
+  max-items-in-chart:
+    description: Chart history length
+    required: false
+  go-force-package-suffix:
+    description: Include Go package names
+    required: false
+    default: 'false'
+runs:
+  using: node24
+  main: publish.cjs

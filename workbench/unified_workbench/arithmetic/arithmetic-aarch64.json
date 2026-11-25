@@ -1,0 +1,10 @@
+{
+  "component": "Linux AArch64 canonical polynomial API",
+  "binary_sha256": "268717a379f6127936d176be6c7c6938322ac4ecfedb23f0bbe77384f4453725",
+  "source_hashes": {
+    "src/backends/canonical.c": "097af8942c9ae8a135c033f3ef319e1a003f8d9560448323cbb51d9c9bf97c95",
+    "src/backends/canonical_template.inc": "486df34d90445e9d0c55d3f85cc63210f78d4d4db384bbff17900fdc391c4b66",
+    "src/backends/canonical_generated.inc": "2c70cfab09b920e207de347700efe9f5158a13baeb0446435c066172a7496b00",
+    "include/lc_poly.h": "af64767a0b658f2e277c9efa0bee5ddb1440c52244e9a928905f43b6286342b1"
+  }
+}

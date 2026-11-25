@@ -1,0 +1,9 @@
+EXPORTS
+lc_get_sizes
+lc_context_init
+lc_keypair
+lc_encaps
+lc_decaps
+lc_sign
+lc_verify
+lc_error_string

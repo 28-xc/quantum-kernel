@@ -1,0 +1,30 @@
+#if defined(A127_KECCAK_KEM)
+int a127_public_xof(unsigned bits,uint8_t *out,size_t n,const uint8_t *m,size_t mlen,int split){
+  (void)split;
+  if(bits==128){
+    mlk_shake128ctx state;
+    mlk_shake128_init(&state);mlk_shake128_absorb_once(&state,m,mlen);
+    size_t blocks=(n+167u)/168u;
+    if(blocks)mlk_shake128_squeezeblocks(out,blocks,&state);
+    mlk_shake128_release(&state);
+  }else mlk_shake256(out,n,m,mlen);
+  return 1;
+}
+#else
+int a127_public_xof(unsigned bits,uint8_t *out,size_t n,const uint8_t *m,size_t mlen,int split){
+  size_t input_cut=split?mlen/2:mlen,output_cut=split?n/2:n;
+  if(bits==128){
+    mld_shake128ctx st;mld_shake128_init(&st);
+    mld_shake128_absorb(&st,m,input_cut);mld_shake128_absorb(&st,m+input_cut,mlen-input_cut);
+    mld_shake128_finalize(&st);mld_shake128_squeeze(out,output_cut,&st);
+    mld_shake128_squeeze(out+output_cut,n-output_cut,&st);mld_shake128_release(&st);
+  }else{
+    mld_shake256ctx st;mld_shake256_init(&st);
+    mld_shake256_absorb(&st,m,input_cut);mld_shake256_absorb(&st,m+input_cut,mlen-input_cut);
+    mld_shake256_finalize(&st);mld_shake256_squeeze(out,output_cut,&st);
+    mld_shake256_squeeze(out+output_cut,n-output_cut,&st);mld_shake256_release(&st);
+  }
+  return 1;
+}
+#endif
+

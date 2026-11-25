@@ -1,0 +1,33 @@
+{
+  "component": "Windows x64 · 可移植算术诊断",
+  "build_configuration": "compact-rate / portable / Os / LTO",
+  "compiler": "gcc.EXE (Rev9, Built by MSYS2 project) 15.2.0",
+  "dll_sha256": "f18d3880262055a8bbe11a9a5c44c5856d0d9d3bf73a6da60fdf3b2042aec138",
+  "linked_archive_sha256": "f3939aa48093aa109a421f8246a559f28f9a9d37af0154176441cce9951cb592",
+  "source_hashes": {
+    "src/backends/canonical.c": "097af8942c9ae8a135c033f3ef319e1a003f8d9560448323cbb51d9c9bf97c95",
+    "src/backends/canonical_template.inc": "486df34d90445e9d0c55d3f85cc63210f78d4d4db384bbff17900fdc391c4b66",
+    "src/backends/canonical_generated.inc": "2c70cfab09b920e207de347700efe9f5158a13baeb0446435c066172a7496b00",
+    "include/lc_poly.h": "af64767a0b658f2e277c9efa0bee5ddb1440c52244e9a928905f43b6286342b1",
+    "build/adapted_mlkem/src/sampling.c": "33ba57151e79c515988d579eda22c81b8c9485f20af428b1088cd803e4beb6e2",
+    "build/adapted_mlkem/src/compress.c": "384139fd0e0554be40f9fc42b8503a422aeac02b40eb4699306eb650d2b7ce92",
+    "build/adapted_mlkem/src/poly.c": "3d309719ba5731fa1c6e7f909d6cbd0baadc069b95cb9734d79d245dc9b6b2fe",
+    "src/dsa_compact/build/sign_bitmap_stream_alias/adapted/src/poly.c": "a4f2b5181238507981cfe4d2598a385e47689f12c31a3d40eac09172cba75181",
+    "src/dsa_compact/build/sign_bitmap_stream_alias/adapted/src/poly_kl.c": "f23c89670581afdc758d9fd654be77d754cfd1acfa0e111368599f3d8e875f9f"
+  },
+  "adapter_hashes": {
+    "kem.c": "d9b2d0a75fa2a46a238bd6ad41f97f9f374a41e524d42e166af6953a1e59a78a",
+    "dsa.c": "e09e3fca5c0ff706096939d48a6441f291700ad59d8b76657fc2371527d76f54"
+  },
+  "exports": [
+    "lc_poly_add",
+    "lc_poly_sub",
+    "lc_poly_mul",
+    "lc_poly_ntt",
+    "lc_poly_intt",
+    "lc_demo_kem",
+    "lc_demo_dsa44",
+    "lc_demo_dsa65",
+    "lc_demo_dsa87"
+  ]
+}

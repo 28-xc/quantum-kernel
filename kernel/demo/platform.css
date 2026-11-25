@@ -1,0 +1,8 @@
+.topbar{display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap}
+.platform-controls{display:flex;align-items:center;gap:12px}
+.platform-controls label{display:flex;align-items:center;gap:10px;font-size:13px}
+.platform-controls select{width:170px;margin:0}
+.platform-controls #live-state{font-size:13px;white-space:nowrap}
+.platform-controls button{padding:8px 14px}
+.platform-help{width:100%;margin:0;color:var(--muted,#547084);font-size:12px;text-align:right}
+@media(max-width:800px){.platform-controls{flex-wrap:wrap}.platform-controls select{width:145px}}

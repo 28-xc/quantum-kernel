@@ -1,0 +1,2055 @@
+<?xml version='1.0' encoding='utf8'?>
+<configuration id="overwrite-first-odd">
+  <sources>
+    <file id="s0" path="src/s0/flash.ld" sha256="df9bd8a2c7c091c0972805d60a7e2fb6e68f7b84ef3cbd3be0abdae6f4360580" />
+    <file id="s1" path="src/s1/startup.S" sha256="6eadc3ba221c962e2c0cc20ecf3761498bbda84a1a0570fa8b3fa17c34b77cf5" />
+    <file id="s2" path="src/s2/board.c" sha256="63966d091222081f87fda1daa84c20f398a0cbe803e1744063617bf4f79f0c05" />
+    <file id="s3" path="src/s3/dispatch.c" sha256="1a5789df57565f53b6c6dffc9bba44db04e8eca9ea245b50519f3a118562418d" />
+    <file id="s4" path="src/s4/identity.c" sha256="c005f39014a83bfc3ff947895181deab5c89e384614fe3d48622d8d1f966d12f" />
+    <file id="s5" path="src/s5/runtime.c" sha256="17ec6af8e27c004a9c3878078cbfe9509ebf55cd532b979185981f7e43066f0a" />
+    <file id="s6" path="src/s6/usb.c" sha256="71db7bba036766f92b1fecc79f5c41c45282015e3730d00841fbdd13f8f8a533" />
+    <file id="s7" path="src/s7/usb_control.c" sha256="fddb30471b6f8df2fb6c8bd4893da5d6d33c9792af656cb9de397809a28dda24" />
+    <file id="s8" path="src/s8/usb_standard.c" sha256="90a490365ca6c895a48a467937f75bebe6ecd195cc093669126db0c415c2cbd2" />
+    <file id="s9" path="src/s9/usb_microsoft.c" sha256="21155c042bbd9626e5349eef82b018d6eb00425d19bf757e8dbad287ef789ec3" />
+    <file id="s10" path="src/s10/usb_dwc_common.c" sha256="7cd3c4d55fbad837102683aa549470cbde4eeea0ceb570b9d74df5d5e0b80b99" />
+    <file id="s11" path="src/s11/usb_f107.c" sha256="6b015a3fc152e7c18b8825957068363ec18480f9681d6beab8565c0fc7820aa7" />
+    <file id="s12" path="src/s12/rcc_common_all.c" sha256="212aa22dab1f9e84ddd002a3d71356d2a2ede8cb10ccee6e7e7a778302223c96" />
+    <file id="s13" path="src/s13/instances.c" sha256="4b7f11bd04aa1086cbc21b0534ebe349412efdd2b22cd9a8861547157478369f" />
+    <file id="s14" path="src/s14/instances.c" sha256="75b153c6171d21445f643ceb316e669cf1ecf3e52e16f50e4754085d336b13cf" />
+    <file id="s15" path="src/s15/instances.c" sha256="75d28c4c5b7e3483ccf475627a72cea556f31c1dd89ed2fecf92a23e5a3499d7" />
+    <file id="s16" path="src/s16/instances.c" sha256="84e2f1cdf2755c27527788f334a6bfa730112544e69fb01fbba611c2dc9a0b9c" />
+    <file id="s17" path="src/s17/instances.c" sha256="b9cea106d87e4b8cbe7efb70d05653afa891e1cec87fd11fe6a47cbf6d761c6b" />
+    <file id="s18" path="src/s18/instances.c" sha256="f22dc28347abc9da5c1ab3f120a1b8b3ba863f36e9a86c579799f914e020e121" />
+    <file id="s19" path="src/s19/0.lst" sha256="54ab08be89b8b73717e8800bfc6f75c669c367f408f22e3388159e781a0e744e" />
+    <file id="s20" path="src/s20/adapter.c" sha256="798d8c86f6df0736b27685852d9bc178603dbe9adb82f486e9164e8b5c0084c2" />
+    <file id="s21" path="src/s21/1.lst" sha256="8416d81d9014aa57a58544b7ec57f5774620a2140450dce3da2a6314b4f7f090" />
+    <file id="s22" path="src/s22/kernel-44-paired.c" sha256="6607f6aa96f2feb317881a763ec53d5f1a4a9480ba0c1889cb00f425cddbc6e2" />
+    <file id="s23" path="src/s23/2.lst" sha256="25d259080700bf3ce1bd41241b7834c41e81a382afbfec1f2515b8f533d15fef" />
+    <file id="s24" path="src/s24/target_workspace.c" sha256="26d316f92d448e691bd1cbeb9044938c58cf2278854df17b0cf1099f6dadeaae" />
+    <file id="s25" path="src/s25/3.lst" sha256="81eb0c64048736b2911e0125866d096867291bbbfe7776133fa734adf45413eb" />
+    <file id="s26" path="src/s26/public.c" sha256="0218e4d6074c25f2b29e424c7a9b680b6aa27646a1941c778828454e7c8c4119" />
+    <file id="s27" path="src/s27/4.lst" sha256="4acc58e2c566bff731890bf17fbbfcf244b1d70645f5377bff29c8ad9531e0d4" />
+    <file id="s28" path="src/s28/5.lst" sha256="fc399d065cf56297b3ad9b3b9676811dc2b6320a50a1188d0bdaa50ba2f5adca" />
+    <file id="s29" path="src/s29/target_workspace.c" sha256="804a8fba9dbaf1ca05d0ac1a7523969142216c62381cd7d80de4a3e0dfcfea0b" />
+    <file id="s30" path="src/s30/6.lst" sha256="4c3a8327172804a5e8443cbd64935527fd6edff6697d455aa772654f567beda5" />
+    <file id="s31" path="src/s31/kernel-87-native.c" sha256="7b55a1c3b0eb73ee246aa002dfe4a36363c14ef96d43882cafaceeaae300005f" />
+    <file id="s32" path="src/s32/7.lst" sha256="665dce905a713328ca57fe422f62004534d29bc25309683d4dd7b316cab85efb" />
+    <file id="s33" path="src/s33/arena.c" sha256="f7fd803240d3807f0c4aa8ab82e482cf485fc56a233b5a3d331ed77ab02046c6" />
+    <file id="s34" path="src/s34/8.lst" sha256="7b0975710558bb70c114cbbc3c5ce282ebc0bca2a01f16e7df2fcb67c0210d27" />
+    <file id="s35" path="src/s35/public.c" sha256="454c5cfb2abf5e8cfbcb5e8afef17f7368b1b6226b77a6da9bfcebc279eba375" />
+    <file id="s36" path="src/s36/9.lst" sha256="e4c974cc45c0860cd3f28fa973cf70f6f1c8a4c44bc56bda7b8e122e5749f5ca" />
+    <file id="s37" path="src/s37/10.lst" sha256="5445157693eb3f852fbef9796f502eae5e0d9a3f672d43bec40b89215994c063" />
+    <file id="s38" path="src/s38/target_workspace.c" sha256="e13e25ab41c6af376a81578d378b470520e046ff6575b91fe335833f7bd77fe7" />
+    <file id="s39" path="src/s39/11.lst" sha256="5585e3c76e9ca934de370789e09b0454fdd7dcdd972085e2617d81c5cf0d32f0" />
+    <file id="s40" path="src/s40/target_workspace.c" sha256="53c83e8dc510632f2ea00b6e93e12595ba4a0522ffe5f5d98593677027a35e83" />
+    <file id="s41" path="src/s41/12.lst" sha256="5bdb419e1ac1a9210e9432f00ede0d0bd4be53508bfa7f6038008dc9ac76661a" />
+    <file id="s42" path="src/s42/kernel-65-paired.c" sha256="2e85edc342e2493de251a1dea7ffe8c6e6bafaaea60218e29d3939e6f3bb50ed" />
+    <file id="s43" path="src/s43/13.lst" sha256="d6281c90278ce86f85b5d09cf70880a2414a0965e289843b194086f68e64e505" />
+    <file id="s44" path="src/s44/target_workspace.c" sha256="b566b8de2656d9b3092fe18d8cc0975a16165e68070720498f8cd7cb88a2d757" />
+    <file id="s45" path="src/s45/14.lst" sha256="6de0a4ec918159321e68c4de3192798d56c8b98eb4525a9d065cda9337b3c70c" />
+    <file id="s46" path="src/s46/kernel-65-native.c" sha256="cb2d372945a4d120e29f4dd23f0432b7a4bf7d806e3e0fb41658d9ddcab4f0af" />
+    <file id="s47" path="src/s47/15.lst" sha256="809c54bd387095e659a9d2a55c1676459fff655c13cfc3ca29196a57b7bef154" />
+    <file id="s48" path="src/s48/kernel-1024-combined.c" sha256="ebf2acebad66aaa8062f4089ac883dc74852b36d03933112f8527ffdcf09d1db" />
+    <file id="s49" path="src/s49/16.lst" sha256="585e22108d60d12bd596d68972ceb30b8811a15ed0ed5e823a192427652d346b" />
+    <file id="s50" path="src/s50/public.c" sha256="381050bd548a507bdd6af3c0c366c11ef6744194e3954e6b0a65b36e41ebb43a" />
+    <file id="s51" path="src/s51/17.lst" sha256="2b6a2b476abbe0d391f42a3a3f86003d7d6a1aaf8ecfda757a4cfe14029ac184" />
+    <file id="s52" path="src/s52/18.lst" sha256="a83a6ec0e7df73b08c88311638fd882ce962bf8917bbfbf2d2e9ba84afaf65f7" />
+    <file id="s53" path="src/s53/fastntt-pp.s" sha256="957d98e5eb30c6ba33040e3e014bd7f194841382562c1c0fadbd780026b32f6f" />
+    <file id="s54" path="src/s54/19.lst" sha256="086467947cfd9df76a505e6405236357e2165db645ee7156120137897581412f" />
+    <file id="s55" path="src/s55/ntt.c" sha256="4ee0757feefe1c4d5e336d93c92d62f399194f4977bc7d6f18dd1f1daa0c8541" />
+    <file id="s56" path="src/s56/20.lst" sha256="d64466bf2f29979d274fcb441cad975292cf04b60327ddcca4f565244996d48b" />
+    <file id="s57" path="src/s57/21.lst" sha256="8aa2b5bea3c3f8a94d55b9e2cdc56e61ff57d75a65ab756621340319fd80a7cb" />
+    <file id="s58" path="src/s58/fastinvntt-pp.s" sha256="13eb3ddab288633336ed5c5ab4a559b84ac38629e0f752350e0e150cb4a4522d" />
+    <file id="s59" path="src/s59/22.lst" sha256="f1b2562192296f95143236a405c1ffad2464958f19b0fb703c80c4faec8e1bb2" />
+    <file id="s60" path="src/s60/adapter.c" sha256="9a33ff4dd1b5c63c32a0e1b22e812a0a32785a78be3e3625ffb8b91ca8551b8a" />
+    <file id="s61" path="src/s61/23.lst" sha256="a31fafc0618deec91a3bea360990d3db25ec4b78a3778bd466bc58aa1bff2315" />
+    <file id="s62" path="src/s62/adapter.c" sha256="28ff01e5000f19588a306098eb98c16acdc3effd0a629a2bb41bdbba63d53eb2" />
+    <file id="s63" path="src/s63/24.lst" sha256="fb2368aa75e5354786676b0109f0f1952dc49eb6cf916ebbb3e721bd13acef03" />
+    <file id="s64" path="src/s64/public.c" sha256="54d191e306807cc39b48b2ad1ca700006f0c6e35feba3c1cf8888f1633e7e559" />
+    <file id="s65" path="src/s65/25.lst" sha256="1be30e8503142de80d466fa4309688e4592474bda218ce25a92da96c59ba8eff" />
+    <file id="s66" path="src/s66/26.lst" sha256="409fc116c0618cfed38b1d74b79dd7657513d40112e6ee3506a466584247a635" />
+    <file id="s67" path="src/s67/adapter.c" sha256="9347751bd4c8f27cbb07d188c5258027fb576254e404a271d4ad1d43b9f19cb4" />
+    <file id="s68" path="src/s68/27.lst" sha256="3378c061efe8e444079e1b4f19ce6ae1619ba425a11ad8b11facc3d460d72a96" />
+    <file id="s69" path="src/s69/adapter.c" sha256="0f03d905888de6a1f5c5aa6cb90a98bca613e2a2eefdee8ba84bb57b2c4249ee" />
+    <file id="s70" path="src/s70/28.lst" sha256="5c91f5f15d781a0f5bd39a1f4cbc274a6d4d35684fc035c29d8063fc8e15b6a3" />
+    <file id="s71" path="src/s71/public.c" sha256="13cbc295a2bdd1680b57cf280d46b1699f297f3342b1cc8835c73c7d81b2d3d6" />
+    <file id="s72" path="src/s72/29.lst" sha256="b8ec7ff966aa2329fbf7c17ec83d991ab30c9ef42e48fd13c9e5a02522f5e4ea" />
+    <file id="s73" path="src/s73/30.lst" sha256="7dd50e1e7e0c499856596b9f2addae41e6049e49f988cf089e3d34609b98cb83" />
+    <file id="s74" path="src/s74/pointwise_mont-pp.s" sha256="d996969485f6649dc696f95e88b6044801b0dc97bc1a612e1030e938553f0587" />
+    <file id="s75" path="src/s75/31.lst" sha256="247490265473e5d81de9489a9057fa93a6fe1f6edf5df0f0f424a9f4eb6c2bf8" />
+    <file id="s76" path="src/s76/kernel-512-ntt.c" sha256="c4679980789bb86648bf4604c3def8470fc47d18a324b4cd68859304efbdc9d4" />
+    <file id="s77" path="src/s77/32.lst" sha256="2bcd2870d7b43c16a3c1b5943a2a00c981b8a0e3c68b4cdbce101cd3ebb258b1" />
+    <file id="s78" path="src/s78/kernel-1024-ntt.c" sha256="7b216da11da3a33552874aa18b5f29a880c93b8fe9c95fc80a60a89c640a4bf6" />
+    <file id="s79" path="src/s79/33.lst" sha256="493eeddd711ae6327f3c57c2f7546607ee9e15367fbd3342035b4af51bf5b844" />
+    <file id="s80" path="src/s80/fastinvntt-pp.s" sha256="faa98eb8763426e5180eb224e26016626944591cf75ceb7c27a481bde34b0ad9" />
+    <file id="s81" path="src/s81/34.lst" sha256="4e41aff7c5a5f3c2b402b212fca832df5ac1064024b80f810d23cb74ca93a7e7" />
+    <file id="s82" path="src/s82/target_workspace.c" sha256="f118011866afba5b30b2534c1519d6d9fbfadbb07912ec4944a5a3c632a57e06" />
+    <file id="s83" path="src/s83/35.lst" sha256="6638943e84fa29e55f564e107955c55d58cc9034aa7f0d963725816d9b54bc2a" />
+    <file id="s84" path="src/s84/kernel-512-combined.c" sha256="1c5f95d3396d819d98eeedf1ef3d38c0063225ec5fa0dc1e55b4d592f93622c8" />
+    <file id="s85" path="src/s85/36.lst" sha256="8879db748864d8456ec0dc9d4b6a43699936855071a1f352be41f08e30ec2c7f" />
+    <file id="s86" path="src/s86/resource_plan.c" sha256="1d57bec72a8bd4f8061c6eef6a4919eb4ef04bf35c0fd4214dffa71dad71ab28" />
+    <file id="s87" path="src/s87/37.lst" sha256="645ee3ddfb19f635d1794eeafd322a7e708d33e95cdd12031841861a1bafabba" />
+    <file id="s88" path="src/s88/38.lst" sha256="8309226b9e606353547b90ca7b3993ba409303ebe602b128641b1182d1979003" />
+    <file id="s89" path="src/s89/39.lst" sha256="b76e4dee5ef1b144b08b488d9e5e5b5a6ebb645233e69a6f6b86fefd55a2ff96" />
+    <file id="s90" path="src/s90/40.lst" sha256="feddbb7b5c5a986ef439806d862e41cd12d4904ec9e3ad1ac5e244a7f3433692" />
+    <file id="s91" path="src/s91/41.lst" sha256="8148d91170ecd27bec6a1c3524864dd829b2fb7db425da69f752c9b3575f87e4" />
+    <file id="s92" path="src/s92/42.lst" sha256="7e77bc694431412829be746052d04e0ddca8216707188b253968521194dc22c9" />
+    <file id="s93" path="src/s93/43.lst" sha256="c6a181385d27cc67f497fce5e9f360c8e3e42aa979b1fbc26574471ff5e843dc" />
+    <file id="s94" path="src/s94/44.lst" sha256="2c66f7cff0cee699b439c775fe29b8d38ebf60ddc98b1608acd1065a51fe8b7b" />
+    <file id="s95" path="src/s95/45.lst" sha256="8a20a8c2acfd23284cad9f9d71eec80d2254865e33e3d08e78139161950d4e3d" />
+    <file id="s96" path="src/s96/46.lst" sha256="7da9b5ca43fc189ff4499bcbc20986166317fd8ca31e5e1bb8d559f8230f55c7" />
+    <file id="s97" path="src/s97/47.lst" sha256="ac9ab20a8a57e00c89f7512c171557a1ccaa7b1668927a8d966242b8ac90207e" />
+    <file id="s98" path="src/s98/target_workspace.c" sha256="ba4e3312c0e43a781879534d4e464f597dc9ab520383998ba623624ec6f901e2" />
+    <file id="s99" path="src/s99/48.lst" sha256="b9fb38e06b3d1b86c7ca301ff2e50f6b60da57c7b0edd508de233a61019021c8" />
+    <file id="s100" path="src/s100/target_workspace.c" sha256="55a3d2750705f236976b385b33f27e091ce0000f09c0f30ec1a456f5c7a661a8" />
+    <file id="s101" path="src/s101/49.lst" sha256="4bdcd73a914666dece9e34b12fbfacfead394fa79bb74f60e4dfc998c33b9238" />
+    <file id="s102" path="src/s102/target_workspace.c" sha256="1f7696d4025c9ef2b93cd279d539bbcd2a8859a1e44b47bbc145e037d82afc40" />
+    <file id="s103" path="src/s103/50.lst" sha256="768cf5fa492381321b7d7a7a41765c5f337543b3618c76ae1af4c765979423f4" />
+    <file id="s104" path="src/s104/kernel-87-paired.c" sha256="a64abd4d479adbc70419d42fc9d669be215d39d8cc85805dd923748ec3477f1a" />
+    <file id="s105" path="src/s105/51.lst" sha256="ce73fc7ca837d214b67ba1e78671faf45f629984c86b416442fc57d6435995d4" />
+    <file id="s106" path="src/s106/public.c" sha256="215a52bac157c5cb059483c0d031bd85dc000457cb74912a2e32a9e8d5ae0cdd" />
+    <file id="s107" path="src/s107/52.lst" sha256="d85272bc96f37da3367ceca2e91cc77754e4486d8e45be147baf2ad28b6fc152" />
+    <file id="s108" path="src/s108/53.lst" sha256="3ae21ff7f1ea1b93c36e9af554e56094cb1df30da2aee4937a3ae9dd3c341ddf" />
+    <file id="s109" path="src/s109/adapter.c" sha256="529fa0263df70ebd830a2adadb4e771a81e1c30ccde77e2c4dc5443e0475e90d" />
+    <file id="s110" path="src/s110/54.lst" sha256="298d5f298447c74db266a6b99382ac8abf50d648f3d678b6c0f79223dfa3aa5f" />
+    <file id="s111" path="src/s111/55.lst" sha256="85d9be261e928370ebe9995af50fa874c1d45ec327e7e0327e55b2aba12064a9" />
+    <file id="s112" path="src/s112/kernel-768-combined.c" sha256="1de123c30ea593a4673b38abbf894c2b32b4062563e67ec2d52cfce95ca298f0" />
+    <file id="s113" path="src/s113/56.lst" sha256="420fe9f5ad92f95c723f9bbda033fbdaee254157cf86ee937f5ae3dd789a943a" />
+    <file id="s114" path="src/s114/target_workspace.c" sha256="5aed761ec71f8f46fa19d1bfbce6f4718de5ed81a4f9d500aac4b619cebe508d" />
+    <file id="s115" path="src/s115/57.lst" sha256="011024dc6cb9cef881370a401a901b6209f824ddeb0be469e4386f4a6d56cfd3" />
+    <file id="s116" path="src/s116/target_workspace.c" sha256="326ed1947fa3826eaef96c58d172693db434d26be940b9379f193d2d75032a22" />
+    <file id="s117" path="src/s117/58.lst" sha256="cfe4bef4817d7654c2676f1754ec1c792b01f00cf076bfe88f63de7f6c69c3b5" />
+    <file id="s118" path="src/s118/ntt-pp.s" sha256="fd37257e807c06ea31fc9dac9d9061c1610fdcb6809a8ebef6c45c080fc76f09" />
+    <file id="s119" path="src/s119/59.lst" sha256="7e922c5c5205a385d80a4cd10d19ebc061ae8f4c9a9d6c472639f6fc73aef6df" />
+    <file id="s120" path="src/s120/kernel-44-native.c" sha256="70afdd189ca820ae3518808b3cd8817511f415be2bb800ddc989067bef4859a9" />
+    <file id="s121" path="src/s121/60.lst" sha256="ca23a69d11f1bbed1ac397eb22f5c657a509bea412bb48d714bd4dfbee5412ea" />
+    <file id="s122" path="src/s122/kernel-768-ntt.c" sha256="c87f743f5da30b5bd599de1c2491bcdf9e6e72c4ce78656b744f3ef5d4e6fb64" />
+    <file id="s123" path="src/s123/46.lst" sha256="e3f7c4d15090df62ba79d88f0d85ec9db9040b4414a07157b5ba0536c11cfba9" />
+    <file id="s124" path="src/s124/14-keccakf1600-pp.s" sha256="4aecec9568463658718a689f8dfbafdab217a00b5997407370f10854b1bb3682" />
+    <file id="s125" path="src/s125/shared_mlkem_roots.c" sha256="f92277fa1cd3167762a70511d9eacf7556d9a12e1ee3cf16d298708b19cd7049" />
+    <file id="s126" path="src/s126/dsa_sign_shared.c" sha256="006dc2b46b1c0f2544c72ec4093f9c43612f332e5e31c504c90ae283ce7bc07d" />
+    <file id="s127" path="src/s127/dsa_operations.c" sha256="1e8ec58be6ab29c0875696eae40df6d5a94e7e48199fa35ce251660dae2fd864" />
+    <file id="s128" path="src/s128/memory.S" sha256="32a792f43199de09a7786bad136fe714c38acfa069e555a825c212ddb2b62716" />
+    <file id="s129" path="src/s129/transaction.c" sha256="e9867adf4088ddbd12c404aca7300d05cb70a907cb30bd09b623dec87f1e2c60" />
+    <file id="s130" path="src/s130/transaction.c" sha256="27ec86cfecd80cc11334a92584886ff6fc0fa16d640773a14fa84c18fb73904f" />
+    <file id="s131" path="src/s131/registry.c" sha256="807e79f2c03fca305e90d65ee8a814665f56fdee4579bb43d5bed504dbf2a43c" />
+    <file id="s_kem_row" sha256="76392d5cf5c717aae0e60f756009652b8b75a8f68bb16a9cb39e6fad36b8d56c" path="src/s_kem_row/kem_odd_rates.c" />
+    <file id="s_sha_extract" sha256="1f2c8c5906fef5a2fb4ea8abca1d2c634a1466b2c8e5c4cb41024e718385c376" path="src/s_sha_extract/sha_extract.S" />
+    <file id="s_third_block" sha256="86a2789359ace9e6cbc1266d877f3566161d899d344f1c8609c0980bc1a22d65" path="src/s_third_block/third_block.S" />
+    <file id="s_two_columns" sha256="1379e860531ce083c8aa4814f3402b409e773d0fc863be2e48bcd523af32b5fb" path="src/s_two_columns/two_columns.S" />
+    <file id="s_cached_rows" sha256="279fdd6c1180ade207249431607c2055c138f3f3bcdf726e2cabd819d40d8c19" path="src/s_cached_rows/cached_rows.S" />
+    <file id="s_dense_block" sha256="0a66ee29d5899de8d73e4cae576fd2eb300854f2def0fd7ef54fa579d42a2d9e" path="src/s_dense_block/dense_block.S" />
+    <file id="s_block_rows" sha256="4ba8bca1c2bf2fc0077499878ae4358084188b61f4a74ec7c49eac78e8bdb943" path="src/s_block_rows/block_rows.S" />
+    <file id="s_fixture" sha256="c036a8c5b3f90cf8be02674cbf4234175d6cca22cd256aacf5cbf4bd36d22b47" path="src/s_fixture/fixture.c" />
+    <file id="fixture_hash" path="src/s_fixture/fixture_hash.c" sha256="284a798c68b4b64b27c965294a898f21e354c7fe0a2f278907d0aff6c13764fa" />
+    <file id="s_shift" sha256="756b5d5cb5a323899a914e2de66aacca9c707b38d2ad6dcfa53b46de8c8b57ba" path="src/s_shift/runtime_shift.S" />
+    <file id="s_narrow_word" path="src/s_narrow_word/narrow_word.S" sha256="8ebced88d94314b8892c116451c3bee750f29539998ed496fe4eb1da8f02d264" />
+  </sources>
+  <build>
+    <unit id="u0" tool="clang" file="objects/u0/startup.o" sha256="182191a937f0f75eb39ff6de0801e1d4af81c412e53bd7968a428cbf50709292" check="22838d46c95d825e69cf117884c7e873102b6fe0e10bfc519f7efa785b8e62fa">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-mfloat-abi=soft</arg>
+      <arg>-ffreestanding</arg>
+      <arg>-fno-builtin</arg>
+      <arg>-fno-unwind-tables</arg>
+      <arg>-fno-asynchronous-unwind-tables</arg>
+      <arg>-mno-unaligned-access</arg>
+      <arg>-ffunction-sections</arg>
+      <arg>-fdata-sections</arg>
+      <arg>-Os</arg>
+      <arg>-Wno-unknown-attributes</arg>
+      <arg>-c</arg>
+      <source id="s1" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="u1" tool="clang" file="objects/u1/board.o" sha256="d0f1073b514213a9a241b775da2d4582d91af82495d261bf428947ffa6b15d5d" check="0b317a0edab9b97b5eec2d6b80e9749aa8d58a6f3f0a0e9e4608738c2cb3c5f4">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-mfloat-abi=soft</arg>
+      <arg>-ffreestanding</arg>
+      <arg>-fno-builtin</arg>
+      <arg>-fno-unwind-tables</arg>
+      <arg>-fno-asynchronous-unwind-tables</arg>
+      <arg>-mno-unaligned-access</arg>
+      <arg>-ffunction-sections</arg>
+      <arg>-fdata-sections</arg>
+      <arg>-Oz</arg>
+      <arg>-Wno-unknown-attributes</arg>
+      <arg>-c</arg>
+      <source id="s2" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="u2" tool="clang" file="objects/u2/dispatch.o" sha256="8b0ab5b5466e3e642610297d79f97b251f780bd549b5df3897c1d1f4dfa5bad1" check="1c62c264b49a4228d8f87ac646088d74de6891bc300beeb09ecacb103181e98d">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-mfloat-abi=soft</arg>
+      <arg>-ffreestanding</arg>
+      <arg>-fno-builtin</arg>
+      <arg>-fno-unwind-tables</arg>
+      <arg>-fno-asynchronous-unwind-tables</arg>
+      <arg>-mno-unaligned-access</arg>
+      <arg>-ffunction-sections</arg>
+      <arg>-fdata-sections</arg>
+      <arg>-Oz</arg>
+      <arg>-Wno-unknown-attributes</arg>
+      <arg>-c</arg>
+      <source id="s3" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="u3" tool="clang" file="objects/u3/identity.o" sha256="356b84f101c629590739cc8cf989df57e454baf14c5556868c91ec69feeca152" check="14a539dc18257617058d645a1d682ffad9d6e24058435a0455172eb3b23cecf5">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-mfloat-abi=soft</arg>
+      <arg>-ffreestanding</arg>
+      <arg>-fno-builtin</arg>
+      <arg>-fno-unwind-tables</arg>
+      <arg>-fno-asynchronous-unwind-tables</arg>
+      <arg>-mno-unaligned-access</arg>
+      <arg>-ffunction-sections</arg>
+      <arg>-fdata-sections</arg>
+      <arg>-Oz</arg>
+      <arg>-Wno-unknown-attributes</arg>
+      <arg>-c</arg>
+      <source id="s4" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="u4" tool="clang" file="objects/u4/runtime.o" sha256="883726cf835d8d1a7695c71e63fda400935b3fa4b4a8b85557fff31368c061ae" check="883726cf835d8d1a7695c71e63fda400935b3fa4b4a8b85557fff31368c061ae">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-mfloat-abi=soft</arg>
+      <arg>-ffreestanding</arg>
+      <arg>-fno-builtin</arg>
+      <arg>-fno-unwind-tables</arg>
+      <arg>-fno-asynchronous-unwind-tables</arg>
+      <arg>-mno-unaligned-access</arg>
+      <arg>-ffunction-sections</arg>
+      <arg>-fdata-sections</arg>
+      <arg>-Os</arg>
+      <arg>-Wno-unknown-attributes</arg>
+      <arg>-c</arg>
+      <source id="s5" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="u5" tool="clang" file="objects/u5/usb.o" sha256="5ede30c935f6ee3abc14206a1ead394f6bfe13916f0a62c346c6e1fcb5eead09" check="de4b734f02679240d65b5d04902e4953a948c4c48596ce2ef8801a97d2a412ec">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-mfloat-abi=soft</arg>
+      <arg>-ffreestanding</arg>
+      <arg>-fno-builtin</arg>
+      <arg>-fno-unwind-tables</arg>
+      <arg>-fno-asynchronous-unwind-tables</arg>
+      <arg>-mno-unaligned-access</arg>
+      <arg>-ffunction-sections</arg>
+      <arg>-fdata-sections</arg>
+      <arg>-Oz</arg>
+      <arg>-Wno-unknown-attributes</arg>
+      <arg>-c</arg>
+      <source id="s6" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="u6" tool="clang" file="objects/u6/usb_control.o" sha256="76cf27c095a6cc953c597fe6aab42e98c2fd94a799b549e89b875e8c7723d5a6" check="b67c61829ca842f5a82afaab68095086471f5ffe833b9b0c8744a5aaededeae3">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-mfloat-abi=soft</arg>
+      <arg>-ffreestanding</arg>
+      <arg>-fno-builtin</arg>
+      <arg>-fno-unwind-tables</arg>
+      <arg>-fno-asynchronous-unwind-tables</arg>
+      <arg>-mno-unaligned-access</arg>
+      <arg>-ffunction-sections</arg>
+      <arg>-fdata-sections</arg>
+      <arg>-Oz</arg>
+      <arg>-Wno-unknown-attributes</arg>
+      <arg>-c</arg>
+      <source id="s7" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="u7" tool="clang" file="objects/u7/usb_standard.o" sha256="53477bd637a1380d85a0a4c292420d469826564bda4995d0f5042b70ba8d4cb2" check="58a86c31bf4ca7af09694f01709b0e61f012ae0aabc53e414d6f8d9f9498ce65">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-mfloat-abi=soft</arg>
+      <arg>-ffreestanding</arg>
+      <arg>-fno-builtin</arg>
+      <arg>-fno-unwind-tables</arg>
+      <arg>-fno-asynchronous-unwind-tables</arg>
+      <arg>-mno-unaligned-access</arg>
+      <arg>-ffunction-sections</arg>
+      <arg>-fdata-sections</arg>
+      <arg>-Oz</arg>
+      <arg>-Wno-unknown-attributes</arg>
+      <arg>-c</arg>
+      <source id="s8" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="u8" tool="clang" file="objects/u8/usb_microsoft.o" sha256="e75db1f9bbc2b535d463c9d1ea3fb92e79a18512895a7a62e698aae3e9e3cf82" check="594624984b395ed48e72376b0eab874b1f66db65add9eeb3acbe109d107601c0">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-mfloat-abi=soft</arg>
+      <arg>-ffreestanding</arg>
+      <arg>-fno-builtin</arg>
+      <arg>-fno-unwind-tables</arg>
+      <arg>-fno-asynchronous-unwind-tables</arg>
+      <arg>-mno-unaligned-access</arg>
+      <arg>-ffunction-sections</arg>
+      <arg>-fdata-sections</arg>
+      <arg>-Oz</arg>
+      <arg>-Wno-unknown-attributes</arg>
+      <arg>-c</arg>
+      <source id="s9" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="u9" tool="clang" file="objects/u9/usb_dwc_common.o" sha256="0d36646e7182e5cbd9c0470e84271b0aa56427936d294efcb2a1a9f23add6190" check="5a1aca87e2c20c02130b481773c5791fb9fdfada5e37fb3c274c303e0c4e597c">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-mfloat-abi=soft</arg>
+      <arg>-ffreestanding</arg>
+      <arg>-fno-builtin</arg>
+      <arg>-fno-unwind-tables</arg>
+      <arg>-fno-asynchronous-unwind-tables</arg>
+      <arg>-mno-unaligned-access</arg>
+      <arg>-ffunction-sections</arg>
+      <arg>-fdata-sections</arg>
+      <arg>-Oz</arg>
+      <arg>-Wno-unknown-attributes</arg>
+      <arg>-c</arg>
+      <source id="s10" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="u10" tool="clang" file="objects/u10/usb_f107.o" sha256="61eb57ab8a89dfa891e928eb0eaae038ee0f6f1c5d59e0c24e7ff76da3e3055b" check="7d226b10a14c07461bca9a44426700d406a2f7d2463373f05c87e62eaf39ddd0">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-mfloat-abi=soft</arg>
+      <arg>-ffreestanding</arg>
+      <arg>-fno-builtin</arg>
+      <arg>-fno-unwind-tables</arg>
+      <arg>-fno-asynchronous-unwind-tables</arg>
+      <arg>-mno-unaligned-access</arg>
+      <arg>-ffunction-sections</arg>
+      <arg>-fdata-sections</arg>
+      <arg>-Oz</arg>
+      <arg>-Wno-unknown-attributes</arg>
+      <arg>-c</arg>
+      <source id="s11" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="u11" tool="clang" file="objects/u11/rcc_common_all.o" sha256="6c2c823968e0755e1d3f2bdf1a794b8088e358c32eb76f7ba2fcbe8d1f175cd1" check="dc3ddbda9ec226d035d1b976d1f297516f0bf24af2234087a632bcaff99efb2a">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-mfloat-abi=soft</arg>
+      <arg>-ffreestanding</arg>
+      <arg>-fno-builtin</arg>
+      <arg>-fno-unwind-tables</arg>
+      <arg>-fno-asynchronous-unwind-tables</arg>
+      <arg>-mno-unaligned-access</arg>
+      <arg>-ffunction-sections</arg>
+      <arg>-fdata-sections</arg>
+      <arg>-Oz</arg>
+      <arg>-Wno-unknown-attributes</arg>
+      <arg>-c</arg>
+      <source id="s12" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="u12" tool="clang" file="objects/u12/vectors512.o" sha256="5cb3d2acee73789baea1f67f5e608744f3a9f605e518831d59a153f2ea53cbb9" check="884c39cb801e0eb25fd18a81fd852aac91951e56e45dadbaa174991ef65b4ab5">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-mfloat-abi=soft</arg>
+      <arg>-ffreestanding</arg>
+      <arg>-fno-builtin</arg>
+      <arg>-fno-unwind-tables</arg>
+      <arg>-fno-asynchronous-unwind-tables</arg>
+      <arg>-mno-unaligned-access</arg>
+      <arg>-ffunction-sections</arg>
+      <arg>-fdata-sections</arg>
+      <arg>-Os</arg>
+      <arg>-Wno-unknown-attributes</arg>
+      <arg>-c</arg>
+      <source id="s13" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="u13" tool="clang" file="objects/u13/vectors768.o" sha256="1a381ab017a55410010825a3f611096e85c542986e3db1957986c3886994a42a" check="868eedfa2d3c930d0dd6adb2b527d8ab4304a2d15557b56f6cbe983da588a1bc">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-mfloat-abi=soft</arg>
+      <arg>-ffreestanding</arg>
+      <arg>-fno-builtin</arg>
+      <arg>-fno-unwind-tables</arg>
+      <arg>-fno-asynchronous-unwind-tables</arg>
+      <arg>-mno-unaligned-access</arg>
+      <arg>-ffunction-sections</arg>
+      <arg>-fdata-sections</arg>
+      <arg>-Os</arg>
+      <arg>-Wno-unknown-attributes</arg>
+      <arg>-c</arg>
+      <source id="s14" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="u14" tool="clang" file="objects/u14/vectors1024.o" sha256="533eebc3866dd9af1ceff495da8b1a4a6b53f5f3b61dda364b82acc56fc15f3c" check="a5e4d5f5ae8752f7ee581ea4a8f41543a9b36424dde97c1845f3be279f2e9590">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-mfloat-abi=soft</arg>
+      <arg>-ffreestanding</arg>
+      <arg>-fno-builtin</arg>
+      <arg>-fno-unwind-tables</arg>
+      <arg>-fno-asynchronous-unwind-tables</arg>
+      <arg>-mno-unaligned-access</arg>
+      <arg>-ffunction-sections</arg>
+      <arg>-fdata-sections</arg>
+      <arg>-Os</arg>
+      <arg>-Wno-unknown-attributes</arg>
+      <arg>-c</arg>
+      <source id="s15" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="u15" tool="clang" file="objects/u15/vectors44.o" sha256="41bfc314f119573ba3196ab0908166a6f6286353d29a9d2af2a28355cfa27380" check="33a07bd2ec8fd394b21452fffc0afa53fa4b0f30118c68de4c5744d471595b3e">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-mfloat-abi=soft</arg>
+      <arg>-ffreestanding</arg>
+      <arg>-fno-builtin</arg>
+      <arg>-fno-unwind-tables</arg>
+      <arg>-fno-asynchronous-unwind-tables</arg>
+      <arg>-mno-unaligned-access</arg>
+      <arg>-ffunction-sections</arg>
+      <arg>-fdata-sections</arg>
+      <arg>-Os</arg>
+      <arg>-Wno-unknown-attributes</arg>
+      <arg>-c</arg>
+      <source id="s16" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="u16" tool="clang" file="objects/u16/vectors65.o" sha256="9cffd4e6b865e85d85058172abb258dc44646a1809d19835e5da5004474dfac4" check="2029515b6e1b085240bd6be97d784e45985e8cb932148930d37d4d63f19fc45b">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-mfloat-abi=soft</arg>
+      <arg>-ffreestanding</arg>
+      <arg>-fno-builtin</arg>
+      <arg>-fno-unwind-tables</arg>
+      <arg>-fno-asynchronous-unwind-tables</arg>
+      <arg>-mno-unaligned-access</arg>
+      <arg>-ffunction-sections</arg>
+      <arg>-fdata-sections</arg>
+      <arg>-Os</arg>
+      <arg>-Wno-unknown-attributes</arg>
+      <arg>-c</arg>
+      <source id="s17" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="u17" tool="clang" file="objects/u17/vectors87.o" sha256="f35642239af1f0447ca3312bc0366cff769ddf2b143aa41d45ffe9a3a96dc5b9" check="4daca904f390e2d2382ce5405c3eb2b279519f738564e5a3c6179267ebb68172">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-mfloat-abi=soft</arg>
+      <arg>-ffreestanding</arg>
+      <arg>-fno-builtin</arg>
+      <arg>-fno-unwind-tables</arg>
+      <arg>-fno-asynchronous-unwind-tables</arg>
+      <arg>-mno-unaligned-access</arg>
+      <arg>-ffunction-sections</arg>
+      <arg>-fdata-sections</arg>
+      <arg>-Os</arg>
+      <arg>-Wno-unknown-attributes</arg>
+      <arg>-c</arg>
+      <source id="s18" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="u18" tool="clang" file="objects/u18/adapter.o" sha256="d347c31358d9bde11305486dc180ac08625718bdcbcaf13aad7f3660ba814e7c" check="0b935ac69c186ec0b9d3beb307e2930f1d0d161192d7c9f944623522f539756d">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-mfloat-abi=soft</arg>
+      <arg>-ffreestanding</arg>
+      <arg>-fno-builtin</arg>
+      <arg>-fno-unwind-tables</arg>
+      <arg>-fno-asynchronous-unwind-tables</arg>
+      <arg>-mno-unaligned-access</arg>
+      <arg>-ffunction-sections</arg>
+      <arg>-fdata-sections</arg>
+      <arg>-Oz</arg>
+      <arg>-Wno-unknown-attributes</arg>
+      <arg>-c</arg>
+      <source id="s20" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="u19" tool="llvm-objcopy" file="objects/u19/weak-adapter.o" sha256="0be352ded2b53685ad8b3b8dea93aff44ca105d560220268608d23d8925130a5" check="516ef73c28ea9ade6c746a16879c1c4a356b34e26b432a8df434e54bc9adc5c6">
+      <arg>--weaken-symbol=lc_dsa_workspace_bound</arg>
+      <input id="u18" />
+      <output />
+    </unit>
+    <unit id="u20" tool="llvm-objcopy" file="objects/u20/000-legacy-adapter.o" sha256="2ac21340fc25a26e3eae855f0aa928421e4deb97b2d293a349daf4da21a7dadb" check="09333dee7785a7b100fc5448fcc1075a8ca7f637ca74a141aec772ffc0a6ff32">
+      <source id="s19" prefix="--redefine-syms=" />
+      <input id="u19" />
+      <output />
+    </unit>
+    <unit id="u21" tool="clang" file="objects/u21/kernel-44-paired.o" sha256="578159b7f67ed4bf5cc100456bc5a039c0696541cad5c635a0060892e2995254" check="1d836ed1efdeb7fc44c2734755d75895444a8ea48c5f361e05ddf0c4da09c00c">
+      <arg>-fno-unroll-loops</arg>
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-mfloat-abi=soft</arg>
+      <arg>-ffreestanding</arg>
+      <arg>-fno-builtin</arg>
+      <arg>-fno-unwind-tables</arg>
+      <arg>-fno-asynchronous-unwind-tables</arg>
+      <arg>-mno-unaligned-access</arg>
+      <arg>-ffunction-sections</arg>
+      <arg>-fdata-sections</arg>
+      <arg>-O2</arg>
+      <arg>-Wno-unknown-attributes</arg>
+      <arg>-c</arg>
+      <source id="s22" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="u22" tool="llvm-objcopy" file="objects/u22/001-kernel.o" sha256="408657b884238d86d4994a34d5d03cc3927bd7b73b6deaf6cdf300e6cf1829f3" check="676303130fd599e8a4c9cf959df15e969203186af1761bafedaf2a7502e27356">
+      <source id="s21" prefix="--redefine-syms=" />
+      <input id="u21" />
+      <output />
+    </unit>
+    <unit id="u23" tool="clang" file="objects/u23/81-bound.o" sha256="275baf20dc300e1390ef7be97efafabc50f1eaced35e14e49c5407d2bb352b1c" check="cfeadca8c6fefed0bd3f3d25194795b9b4ea473888a0dfbed540dfc754d94ce1">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-mfloat-abi=soft</arg>
+      <arg>-ffreestanding</arg>
+      <arg>-fno-builtin</arg>
+      <arg>-fno-unwind-tables</arg>
+      <arg>-fno-asynchronous-unwind-tables</arg>
+      <arg>-mno-unaligned-access</arg>
+      <arg>-ffunction-sections</arg>
+      <arg>-fdata-sections</arg>
+      <arg>-Oz</arg>
+      <arg>-Wno-unknown-attributes</arg>
+      <arg>-c</arg>
+      <source id="s24" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="u24" tool="llvm-objcopy" file="objects/u24/002-target_workspace.o" sha256="e0658314757781f5be0700d216f3ac697a2cd9294917f89da9156764d75a541f" check="26a77198e03b623010f698906be0ca89140ac968d51ab9b9eaef52f2a0278f97">
+      <source id="s23" prefix="--redefine-syms=" />
+      <input id="u23" />
+      <output />
+    </unit>
+    <unit id="u25" tool="clang" file="objects/u25/11-public.o" sha256="28a158b54f2a3bc5ee03daa9a427fbb9866d2fe9cf0cbe984714dde3d84b9307" check="daa1aee5f593036039aef13d41edefdc6689f1268315d2e76a795f4605701a2a">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-mfloat-abi=soft</arg>
+      <arg>-ffreestanding</arg>
+      <arg>-fno-builtin</arg>
+      <arg>-fno-unwind-tables</arg>
+      <arg>-fno-asynchronous-unwind-tables</arg>
+      <arg>-mno-unaligned-access</arg>
+      <arg>-ffunction-sections</arg>
+      <arg>-fdata-sections</arg>
+      <arg>-Oz</arg>
+      <arg>-Wno-unknown-attributes</arg>
+      <arg>-c</arg>
+      <source id="s26" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="u26" tool="llvm-objcopy" file="objects/u26/003-public.o" sha256="518808475a101333e181cdfce573c8439e5698b8e4d73b69fa0085e69f18ded6" check="3d7929a86b86f80210e483b04dea12db713a78c4097964384ad7bf82783a0528">
+      <source id="s25" prefix="--redefine-syms=" />
+      <input id="u25" />
+      <output />
+    </unit>
+    <unit id="u27" tool="llvm-objcopy" file="objects/u27/004-public.o" sha256="6c0382baee4752e6e284c3de8e36eee9093c3455ec632518c242ab94d90fab92" check="569b4ad081cce74fcbfb9238195e94002630213dbaf9dac64ee4f6b781f24dd0">
+      <source id="s27" prefix="--redefine-syms=" />
+      <input id="u25" />
+      <output />
+    </unit>
+    <unit id="u28" tool="clang" file="objects/u28/81-bound.o" sha256="3530d5b0ea1b26688ce1ac2f86fb65fa181c8f46b3f35991dc35c06056eae5b2" check="7becd0c121b8e1a53bf8ed6fbe86b0c62ca625bd286d1893291f67d9dcdb4e90">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-mfloat-abi=soft</arg>
+      <arg>-ffreestanding</arg>
+      <arg>-fno-builtin</arg>
+      <arg>-fno-unwind-tables</arg>
+      <arg>-fno-asynchronous-unwind-tables</arg>
+      <arg>-mno-unaligned-access</arg>
+      <arg>-ffunction-sections</arg>
+      <arg>-fdata-sections</arg>
+      <arg>-Oz</arg>
+      <arg>-Wno-unknown-attributes</arg>
+      <arg>-c</arg>
+      <source id="s29" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="u29" tool="llvm-objcopy" file="objects/u29/005-target_workspace.o" sha256="c35e9a84ed95e6d7b85830ed8685c9b10d5ed58c9f1828bef967a3090c94d987" check="f6c391d5539e97630f768a1ea44fe35b9847ff87e0ade2fcf4f6188c78f5c06c">
+      <source id="s28" prefix="--redefine-syms=" />
+      <input id="u28" />
+      <output />
+    </unit>
+    <unit id="u30" tool="clang" file="objects/u30/kernel-87-native.o" sha256="50165d5f06fe2c964c1642f34eede1919d7ba1f4060892f3952dfb13c251f33e" check="f7e6353109a2d744c96308c7a6db01e44df5a982dacc3fba7e7f38193ffe8ec7">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-mfloat-abi=soft</arg>
+      <arg>-ffreestanding</arg>
+      <arg>-fno-builtin</arg>
+      <arg>-fno-unwind-tables</arg>
+      <arg>-fno-asynchronous-unwind-tables</arg>
+      <arg>-mno-unaligned-access</arg>
+      <arg>-ffunction-sections</arg>
+      <arg>-fdata-sections</arg>
+      <arg>-Oz</arg>
+      <arg>-Wno-unknown-attributes</arg>
+      <arg>-c</arg>
+      <source id="s31" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="u31" tool="llvm-objcopy" file="objects/u31/006-kernel.o" sha256="2683e242d51755aa038e08d1e6c4f2bed6eda9895315b47840995086392524db" check="502b59d150330d37e74cf4166cc664d59c557b87457f041b453e42fb8fbfa4f9">
+      <source id="s30" prefix="--redefine-syms=" />
+      <input id="u30" />
+      <output />
+    </unit>
+    <unit id="u32" tool="clang" file="objects/u32/13-arena.o" sha256="3bf865cf7cc92bc2e6e2a55a59d7a647d3c14c7193264db47bfc8193be9cee69" check="3bf865cf7cc92bc2e6e2a55a59d7a647d3c14c7193264db47bfc8193be9cee69">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-mfloat-abi=soft</arg>
+      <arg>-ffreestanding</arg>
+      <arg>-fno-builtin</arg>
+      <arg>-fno-unwind-tables</arg>
+      <arg>-fno-asynchronous-unwind-tables</arg>
+      <arg>-mno-unaligned-access</arg>
+      <arg>-ffunction-sections</arg>
+      <arg>-fdata-sections</arg>
+      <arg>-Os</arg>
+      <arg>-Wno-unknown-attributes</arg>
+      <arg>-c</arg>
+      <source id="s33" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="u33" tool="llvm-objcopy" file="objects/u33/007-13-arena.o" sha256="25758e47c86863a14868d29cdc23586fdb0216547289cd74b4f003e16aa24abe" check="25758e47c86863a14868d29cdc23586fdb0216547289cd74b4f003e16aa24abe">
+      <source id="s32" prefix="--redefine-syms=" />
+      <input id="u32" />
+      <output />
+    </unit>
+    <unit id="u34" tool="clang" file="objects/u34/11-public.o" sha256="3c0700c6ccdf4ba295dcf5d82ae6571c6b73e74ffd9b0e701015e8cae5aeb2a2" check="86736fad6bea22007621e71886889c3a08d06eb6af9a4b8d2cae826bd87fbc0c">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-mfloat-abi=soft</arg>
+      <arg>-ffreestanding</arg>
+      <arg>-fno-builtin</arg>
+      <arg>-fno-unwind-tables</arg>
+      <arg>-fno-asynchronous-unwind-tables</arg>
+      <arg>-mno-unaligned-access</arg>
+      <arg>-ffunction-sections</arg>
+      <arg>-fdata-sections</arg>
+      <arg>-Oz</arg>
+      <arg>-Wno-unknown-attributes</arg>
+      <arg>-c</arg>
+      <source id="s35" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="u35" tool="llvm-objcopy" file="objects/u35/008-public.o" sha256="b9acfbeaa4251dfbd89c868667616dac4dc0a54aad754e0a023dae6e542207e5" check="e8428eae5e6558d0c0654a70170d3fc9462ed0fabea6afdc33b71e102fc69315">
+      <source id="s34" prefix="--redefine-syms=" />
+      <input id="u34" />
+      <output />
+    </unit>
+    <unit id="u36" tool="llvm-objcopy" file="objects/u36/009-public.o" sha256="c9971cbefebf176c2d7be980b44b28744af56293a22cad14b6a896015bc30033" check="054e4264c0328ca15c98de147b3b818209af57ed4b27b4d28b648be1a0eb1ee7">
+      <source id="s36" prefix="--redefine-syms=" />
+      <input id="u34" />
+      <output />
+    </unit>
+    <unit id="u37" tool="clang" file="objects/u37/81-bound.o" sha256="42182e1d595f342291273339cd2d38b74d449f38dd20349a67d837c90520f088" check="8572e44cc04ff89c064c303922ca64147aebee8d8f1feb7a63207b31290de377">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-mfloat-abi=soft</arg>
+      <arg>-ffreestanding</arg>
+      <arg>-fno-builtin</arg>
+      <arg>-fno-unwind-tables</arg>
+      <arg>-fno-asynchronous-unwind-tables</arg>
+      <arg>-mno-unaligned-access</arg>
+      <arg>-ffunction-sections</arg>
+      <arg>-fdata-sections</arg>
+      <arg>-Oz</arg>
+      <arg>-Wno-unknown-attributes</arg>
+      <arg>-c</arg>
+      <source id="s38" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="u38" tool="llvm-objcopy" file="objects/u38/010-target_workspace.o" sha256="176c1aeaaeff5f0e7dec22e299fc7de5a8d0056af6e31d3d0d06f9a55c58eff7" check="2895907cfca92b44516713fba91df61db74325d86aa73fc807b00506d33efa3e">
+      <source id="s37" prefix="--redefine-syms=" />
+      <input id="u37" />
+      <output />
+    </unit>
+    <unit id="u39" tool="clang" file="objects/u39/81-bound.o" sha256="454e9c133c8dfe4857203a4d554036e341ccf17feb9d7a5781f38a1400ed7f21" check="cba17d586949785439aea922ed406ee0d46b4aec102636fdb953af78712471c3">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-mfloat-abi=soft</arg>
+      <arg>-ffreestanding</arg>
+      <arg>-fno-builtin</arg>
+      <arg>-fno-unwind-tables</arg>
+      <arg>-fno-asynchronous-unwind-tables</arg>
+      <arg>-mno-unaligned-access</arg>
+      <arg>-ffunction-sections</arg>
+      <arg>-fdata-sections</arg>
+      <arg>-Oz</arg>
+      <arg>-Wno-unknown-attributes</arg>
+      <arg>-c</arg>
+      <source id="s40" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="u40" tool="llvm-objcopy" file="objects/u40/011-target_workspace.o" sha256="2583dc2bae1199e311b5f31360c691099117c147e107e5c40a2c68cb3c74e1a3" check="fe4c947324ee9df1881b507695aa879f2a1588ebbf2a754de7ddce4c419fc74b">
+      <source id="s39" prefix="--redefine-syms=" />
+      <input id="u39" />
+      <output />
+    </unit>
+    <unit id="u41" tool="clang" file="objects/u41/kernel-65-paired.o" sha256="323d9fe12603cf3d1d6f10003765fcca73a7061112cb768fc52c36c34fc35277" check="44efdecef485272790ef29775b8cbafceba2c9512620f654b4d5e09fb081cd0b">
+      <arg>-fno-unroll-loops</arg>
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-mfloat-abi=soft</arg>
+      <arg>-ffreestanding</arg>
+      <arg>-fno-builtin</arg>
+      <arg>-fno-unwind-tables</arg>
+      <arg>-fno-asynchronous-unwind-tables</arg>
+      <arg>-mno-unaligned-access</arg>
+      <arg>-ffunction-sections</arg>
+      <arg>-fdata-sections</arg>
+      <arg>-O2</arg>
+      <arg>-Wno-unknown-attributes</arg>
+      <arg>-c</arg>
+      <source id="s42" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="u42" tool="llvm-objcopy" file="objects/u42/012-kernel.o" sha256="120ed0fb2cbeaf148ee50e86ecfb75d7e5268dbde76e60bf60f8d2e2dc76f3e6" check="19ad7ec6ff98ff9ce663f65890c53e978eeaaf8b008852fc884b6176b788efad">
+      <source id="s41" prefix="--redefine-syms=" />
+      <input id="u41" />
+      <output />
+    </unit>
+    <unit id="u43" tool="clang" file="objects/u43/81-bound.o" sha256="4b7d29d39550ce50e8681ffecb506080523810667cdeb924da74f797a16461da" check="4d8be1e36d666f5a1b70c08226c7a6f5e700dffbe2d610a23b71811dfdcd4bf5">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-mfloat-abi=soft</arg>
+      <arg>-ffreestanding</arg>
+      <arg>-fno-builtin</arg>
+      <arg>-fno-unwind-tables</arg>
+      <arg>-fno-asynchronous-unwind-tables</arg>
+      <arg>-mno-unaligned-access</arg>
+      <arg>-ffunction-sections</arg>
+      <arg>-fdata-sections</arg>
+      <arg>-Oz</arg>
+      <arg>-Wno-unknown-attributes</arg>
+      <arg>-c</arg>
+      <source id="s44" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="u44" tool="llvm-objcopy" file="objects/u44/013-target_workspace.o" sha256="53bd8473004887d975adee12de4c745ee334235d80c36ecf3999f43b57b4e599" check="f76de8c2433a197893d53c38c2b5f3c67f65ff37ce431dbb22a1acb34411f5db">
+      <source id="s43" prefix="--redefine-syms=" />
+      <input id="u43" />
+      <output />
+    </unit>
+    <unit id="u45" tool="clang" file="objects/u45/kernel-65-native.o" sha256="455ab2cbb0a691d86f0101b8fc3c71be985e16725cd399984e302d05e275a4d5" check="4cf6d712f56cdbaa13fae91ac5e1f0855627b44d54f7dbf250bfaf73e844278b">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-mfloat-abi=soft</arg>
+      <arg>-ffreestanding</arg>
+      <arg>-fno-builtin</arg>
+      <arg>-fno-unwind-tables</arg>
+      <arg>-fno-asynchronous-unwind-tables</arg>
+      <arg>-mno-unaligned-access</arg>
+      <arg>-ffunction-sections</arg>
+      <arg>-fdata-sections</arg>
+      <arg>-Oz</arg>
+      <arg>-Wno-unknown-attributes</arg>
+      <arg>-c</arg>
+      <source id="s46" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="u46" tool="llvm-objcopy" file="objects/u46/014-kernel.o" sha256="94af6a1f1bda2cf609aed4806d7bde9fe0508de389fa9aa5462936666746bd1a" check="146af9ca7c9b226f5be65f44d872a70c1433896b1840c7649f4f8fb265c8f48e">
+      <source id="s45" prefix="--redefine-syms=" />
+      <input id="u45" />
+      <output />
+    </unit>
+    <unit id="u47" tool="clang" file="objects/u47/kernel-1024-combined.o" sha256="4f82921966d81b2f7e322e0d05c2761a6f6d55d35fe828e2d85e250eba2a7814" check="079a21b1a1adb9bef73822936f7c775bd4d6fb21bf7052b6b4a00192b9e99292">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-mfloat-abi=soft</arg>
+      <arg>-ffreestanding</arg>
+      <arg>-fno-builtin</arg>
+      <arg>-fno-unwind-tables</arg>
+      <arg>-fno-asynchronous-unwind-tables</arg>
+      <arg>-mno-unaligned-access</arg>
+      <arg>-ffunction-sections</arg>
+      <arg>-fdata-sections</arg>
+      <arg>-Os</arg>
+      <arg>-Wno-unknown-attributes</arg>
+      <arg>-c</arg>
+      <source id="s48" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="u48" tool="llvm-objcopy" file="objects/u48/015-kernel.o" sha256="b9abe55a39fc686342ba18dce24c32c00dfdc01150199a77984dea4377181816" check="36374cca76aacdf7d06fc8333c561f758b856bec92585952911fa4900734c841">
+      <source id="s47" prefix="--redefine-syms=" />
+      <input id="u47" />
+      <output />
+    </unit>
+    <unit id="u49" tool="clang" file="objects/u49/11-public.o" sha256="63cc419b4e3543a65b00de291167a863de6475ca35d5f70a59083a6605363941" check="df20f3c1f85d78cd54a102e8806695cc6eb1c2aae9e60d52dca9dabb17ae7952">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-mfloat-abi=soft</arg>
+      <arg>-ffreestanding</arg>
+      <arg>-fno-builtin</arg>
+      <arg>-fno-unwind-tables</arg>
+      <arg>-fno-asynchronous-unwind-tables</arg>
+      <arg>-mno-unaligned-access</arg>
+      <arg>-ffunction-sections</arg>
+      <arg>-fdata-sections</arg>
+      <arg>-Oz</arg>
+      <arg>-Wno-unknown-attributes</arg>
+      <arg>-c</arg>
+      <source id="s50" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="u50" tool="llvm-objcopy" file="objects/u50/016-public.o" sha256="30fb0c3af45b04b6e5d608ac2e9c4a612ffd665f145cd09b013c6b3c1184a0af" check="9e83f3f11e4f08e04b7349ac293ac7c4eaca0631d5dc85e400f4cd3a2b7c570e">
+      <source id="s49" prefix="--redefine-syms=" />
+      <input id="u49" />
+      <output />
+    </unit>
+    <unit id="u51" tool="llvm-objcopy" file="objects/u51/017-public.o" sha256="efaebab7a494370ba1d0fe3e157e788128a0c7787236b6a428beb02824e1b66f" check="a84514d509882d318c86419ae0d650a701d75945f10d88b78729af06f39208e1">
+      <source id="s51" prefix="--redefine-syms=" />
+      <input id="u49" />
+      <output />
+    </unit>
+    <unit id="u52" tool="arm-none-eabi-as" file="objects/u52/21-fastntt.o" sha256="67c01113c924f9f3f653a06b2c67a458f00f760b54f9afceba5ec57bf7c8ba0d" check="67c01113c924f9f3f653a06b2c67a458f00f760b54f9afceba5ec57bf7c8ba0d">
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mfpu=fpv4-sp-d16</arg>
+      <arg>-mthumb</arg>
+      <arg>-o</arg>
+      <output />
+      <source id="s53" />
+    </unit>
+    <unit id="u53" tool="llvm-objcopy" file="objects/u53/018-21-fastntt.o" sha256="11916e25bc59ca35de338ad83969b9b33ff76c12406da52d73871e00b7240c04" check="11916e25bc59ca35de338ad83969b9b33ff76c12406da52d73871e00b7240c04">
+      <source id="s52" prefix="--redefine-syms=" />
+      <input id="u52" />
+      <output />
+    </unit>
+    <unit id="u54" tool="clang" file="objects/u54/26-ntt.o" sha256="6ccf63afdcdfe4f28ad9e74fede6d1a345d14485ebbced91f63169f481d67848" check="6ccf63afdcdfe4f28ad9e74fede6d1a345d14485ebbced91f63169f481d67848">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-mfloat-abi=soft</arg>
+      <arg>-ffreestanding</arg>
+      <arg>-fno-builtin</arg>
+      <arg>-fno-unwind-tables</arg>
+      <arg>-fno-asynchronous-unwind-tables</arg>
+      <arg>-mno-unaligned-access</arg>
+      <arg>-ffunction-sections</arg>
+      <arg>-fdata-sections</arg>
+      <arg>-Os</arg>
+      <arg>-Wno-unknown-attributes</arg>
+      <arg>-mfpu=fpv4-sp-d16</arg>
+      <arg>-c</arg>
+      <source id="s55" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="u55" tool="llvm-objcopy" file="objects/u55/019-26-ntt.o" sha256="07349d3d6a968b5a88679f081eb64b337b4af72ca4bfb8ad52a0d88f9e6ea4a8" check="07349d3d6a968b5a88679f081eb64b337b4af72ca4bfb8ad52a0d88f9e6ea4a8">
+      <source id="s54" prefix="--redefine-syms=" />
+      <input id="u54" />
+      <output />
+    </unit>
+    <unit id="u56" tool="llvm-objcopy" file="objects/u56/020-26-ntt.o" sha256="532bab63318b14fac235979fa2b81a52348534b77fe0e6a166e998c47dba4260" check="532bab63318b14fac235979fa2b81a52348534b77fe0e6a166e998c47dba4260">
+      <source id="s56" prefix="--redefine-syms=" />
+      <input id="u54" />
+      <output />
+    </unit>
+    <unit id="u57" tool="arm-none-eabi-as" file="objects/u57/20-fastinvntt.o" sha256="744afe989d3bf7d21fddf6847da899a97b212e39e50f323d45b800a11ef32bee" check="744afe989d3bf7d21fddf6847da899a97b212e39e50f323d45b800a11ef32bee">
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mfpu=fpv4-sp-d16</arg>
+      <arg>-mthumb</arg>
+      <arg>-o</arg>
+      <output />
+      <source id="s58" />
+    </unit>
+    <unit id="u58" tool="llvm-objcopy" file="objects/u58/021-20-fastinvntt.o" sha256="96a19d01915963839ac5a74e6054dabc96c774888d4f5b163759759e7e05b75c" check="96a19d01915963839ac5a74e6054dabc96c774888d4f5b163759759e7e05b75c">
+      <source id="s57" prefix="--redefine-syms=" />
+      <input id="u57" />
+      <output />
+    </unit>
+    <unit id="u59" tool="clang" file="objects/u59/adapter.o" sha256="8f9abad84fba2f6030ccf304d97538a10dd80b3cfdb318c2f0160e108d7ce7d5" check="cf1dc4ab08922403e47c412db4cc9334ba05ba81a4b8c5636d71a4f36ffb6ca2">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-mfloat-abi=soft</arg>
+      <arg>-ffreestanding</arg>
+      <arg>-fno-builtin</arg>
+      <arg>-fno-unwind-tables</arg>
+      <arg>-fno-asynchronous-unwind-tables</arg>
+      <arg>-mno-unaligned-access</arg>
+      <arg>-ffunction-sections</arg>
+      <arg>-fdata-sections</arg>
+      <arg>-Oz</arg>
+      <arg>-Wno-unknown-attributes</arg>
+      <arg>-c</arg>
+      <source id="s60" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="u60" tool="llvm-objcopy" file="objects/u60/weak-adapter.o" sha256="79c7c0d1228b08b718ad22054d34b1bf1ff25725cc44626818c77ac95416a954" check="9941452e8cf11f85af5cc44d1e6b3458e2ae3f8cbd7e66d809c1a84fdd19d6b7">
+      <arg>--weaken-symbol=lc_dsa_workspace_bound</arg>
+      <input id="u59" />
+      <output />
+    </unit>
+    <unit id="u61" tool="llvm-objcopy" file="objects/u61/022-legacy-adapter.o" sha256="5feaaf6f414d04f6a1ddec140556c075f6115fb15a4bf62099c38dfbc0b8056f" check="fa35ee4647ee7f27c3cdf2dd182129c2845018ad955be291d7b75e561e4bc9e5">
+      <source id="s59" prefix="--redefine-syms=" />
+      <input id="u60" />
+      <output />
+    </unit>
+    <unit id="u62" tool="clang" file="objects/u62/adapter.o" sha256="7e59f4bbdaf89f1b7aab025a7c9fd7969ad7c6dabfb65e742a9f936a8e45b560" check="92a2524265b06c9d9170f2df783278b5520c6cfbd763adcc7af89a9282619a57">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-mfloat-abi=soft</arg>
+      <arg>-ffreestanding</arg>
+      <arg>-fno-builtin</arg>
+      <arg>-fno-unwind-tables</arg>
+      <arg>-fno-asynchronous-unwind-tables</arg>
+      <arg>-mno-unaligned-access</arg>
+      <arg>-ffunction-sections</arg>
+      <arg>-fdata-sections</arg>
+      <arg>-Oz</arg>
+      <arg>-Wno-unknown-attributes</arg>
+      <arg>-c</arg>
+      <source id="s62" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="u63" tool="llvm-objcopy" file="objects/u63/weak-adapter.o" sha256="7e2081b6b5512e3beaff9c32d66a6c1b0174e38913d4a14a3e4ae8588caf3aa9" check="0dadf80f8a122c8bfb874ca9b8a1721405ff32bc853871654dfd36c79d359225">
+      <arg>--weaken-symbol=lc_dsa_workspace_bound</arg>
+      <input id="u62" />
+      <output />
+    </unit>
+    <unit id="u64" tool="llvm-objcopy" file="objects/u64/023-legacy-adapter.o" sha256="4d1e7e7502922979890b7d9178e9576b649152ededcd147c44791918a9bd4f56" check="2c0723e6f5b64e212e1d67637fc0a293ebcc26336a31ee2e4075b1a17b59a50f">
+      <source id="s61" prefix="--redefine-syms=" />
+      <input id="u63" />
+      <output />
+    </unit>
+    <unit id="u65" tool="clang" file="objects/u65/11-public.o" sha256="8354b89a781762ae56d94e22038d840c574ae4a76bb2334b24f33433488b841b" check="6703b95bdefdd9ea39a0482c507373f7cfc369713b2b660028bf0c571425a9e7">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-mfloat-abi=soft</arg>
+      <arg>-ffreestanding</arg>
+      <arg>-fno-builtin</arg>
+      <arg>-fno-unwind-tables</arg>
+      <arg>-fno-asynchronous-unwind-tables</arg>
+      <arg>-mno-unaligned-access</arg>
+      <arg>-ffunction-sections</arg>
+      <arg>-fdata-sections</arg>
+      <arg>-Oz</arg>
+      <arg>-Wno-unknown-attributes</arg>
+      <arg>-c</arg>
+      <source id="s64" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="u66" tool="llvm-objcopy" file="objects/u66/024-public.o" sha256="5e746139ed71ab88b4bd93efb56efb0bd8c443cade776ff438f21ee85c375281" check="70769c4ccf3cbc2e6ebdb53bb7fe954b111621d423e115b0d1152bf6e91eb504">
+      <source id="s63" prefix="--redefine-syms=" />
+      <input id="u65" />
+      <output />
+    </unit>
+    <unit id="u67" tool="llvm-objcopy" file="objects/u67/025-public.o" sha256="d33736150e5c419906bddd9e24d341eb24cda960838568dd9e907956ecc2ea0a" check="519ce9afe8d31992c94b7c3048d7b3bb83cfacbcbb8e2b97f77234da03174ca3">
+      <source id="s65" prefix="--redefine-syms=" />
+      <input id="u65" />
+      <output />
+    </unit>
+    <unit id="u68" tool="clang" file="objects/u68/adapter.o" sha256="0f47466461370d338d6c40172707c170a4cf5adfe6d896f588031ff3afeed81a" check="cc3af04fd009d24fe3ee06ebff46d255e7dfcd3deb1abcf600720cdd7c6ac3e7">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-mfloat-abi=soft</arg>
+      <arg>-ffreestanding</arg>
+      <arg>-fno-builtin</arg>
+      <arg>-fno-unwind-tables</arg>
+      <arg>-fno-asynchronous-unwind-tables</arg>
+      <arg>-mno-unaligned-access</arg>
+      <arg>-ffunction-sections</arg>
+      <arg>-fdata-sections</arg>
+      <arg>-Oz</arg>
+      <arg>-Wno-unknown-attributes</arg>
+      <arg>-c</arg>
+      <source id="s67" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="u69" tool="llvm-objcopy" file="objects/u69/weak-adapter.o" sha256="8acc076c5d4b521161a1cf497421a76f796b1db9ab2ffdb1ff4b46a7aca19116" check="92ef8a26ca10af95dd89df7b45be274f695177f927fae970b60bc885bfeef21d">
+      <arg>--weaken-symbol=lc_dsa_workspace_bound</arg>
+      <input id="u68" />
+      <output />
+    </unit>
+    <unit id="u70" tool="llvm-objcopy" file="objects/u70/026-legacy-adapter.o" sha256="b59743ce9f1a63c09f2fd9c87714974c5727dbf7a45be879f13fb90d16b43e99" check="38d8a9abc2c963b3ad5d1cf2d3dd11be7620628218b6c90a27289900c1be34b2">
+      <source id="s66" prefix="--redefine-syms=" />
+      <input id="u69" />
+      <output />
+    </unit>
+    <unit id="u71" tool="clang" file="objects/u71/adapter.o" sha256="dd9dd683017ff965532afa99dc599f7049bc94aff6bf2f07dfc563ab7ee82ed8" check="ee904be0cf2674d48e8591b93a4c42f21f063da725960c6b7ab3979217348985">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-mfloat-abi=soft</arg>
+      <arg>-ffreestanding</arg>
+      <arg>-fno-builtin</arg>
+      <arg>-fno-unwind-tables</arg>
+      <arg>-fno-asynchronous-unwind-tables</arg>
+      <arg>-mno-unaligned-access</arg>
+      <arg>-ffunction-sections</arg>
+      <arg>-fdata-sections</arg>
+      <arg>-Oz</arg>
+      <arg>-Wno-unknown-attributes</arg>
+      <arg>-c</arg>
+      <source id="s69" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="u72" tool="llvm-objcopy" file="objects/u72/weak-adapter.o" sha256="954c5d5a56f89183261740e755116919c2b2fd544f89bd04d2f389488461dd16" check="9d20a268912a12d00357eacdf337dc4f74925e1a7e1cd581ae29d40746d0cf3a">
+      <arg>--weaken-symbol=lc_dsa_workspace_bound</arg>
+      <input id="u71" />
+      <output />
+    </unit>
+    <unit id="u73" tool="llvm-objcopy" file="objects/u73/027-legacy-adapter.o" sha256="d2f8bfa998edd53ae55c1c0eb64a442dde49197ba6aac3f1b507213f07b3bfb9" check="305cb867a07012a9b0fa21f0b07da72e5b2c677157ca40baaafaf124ede6681e">
+      <source id="s68" prefix="--redefine-syms=" />
+      <input id="u72" />
+      <output />
+    </unit>
+    <unit id="u74" tool="clang" file="objects/u74/11-public.o" sha256="96f788768bb73a56dd88449a8c4c15245cf0474a44da9cb1d10cbb3bb09e6966" check="74e161abc893ccb9536fed3c5712634cfa2e2de5e63f92e8027eb26d1f33916c">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-mfloat-abi=soft</arg>
+      <arg>-ffreestanding</arg>
+      <arg>-fno-builtin</arg>
+      <arg>-fno-unwind-tables</arg>
+      <arg>-fno-asynchronous-unwind-tables</arg>
+      <arg>-mno-unaligned-access</arg>
+      <arg>-ffunction-sections</arg>
+      <arg>-fdata-sections</arg>
+      <arg>-Oz</arg>
+      <arg>-Wno-unknown-attributes</arg>
+      <arg>-c</arg>
+      <source id="s71" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="u75" tool="llvm-objcopy" file="objects/u75/028-public.o" sha256="5751268cceed4a4e2e09251cfa8254a862b930984439131efa6d217098a07fa4" check="3df6832eb054bcb57e002cf8cb68d244c0ad54f534c19393170fe6739620f469">
+      <source id="s70" prefix="--redefine-syms=" />
+      <input id="u74" />
+      <output />
+    </unit>
+    <unit id="u76" tool="llvm-objcopy" file="objects/u76/029-public.o" sha256="fd7260b2c97f34f64ac80fea3dc123f4f12ec372f9785c33e46423273ea06d4f" check="2e3d188f5b2e0960fda34378768e901229b3851d5a2ae9f6977b0e5b865ba74f">
+      <source id="s72" prefix="--redefine-syms=" />
+      <input id="u74" />
+      <output />
+    </unit>
+    <unit id="u77" tool="arm-none-eabi-as" file="objects/u77/18-pointwise_mont.o" sha256="97ee0373b1d982465b28813b06a143083cbdc5e07c53b3c602475264c9064b8a" check="97ee0373b1d982465b28813b06a143083cbdc5e07c53b3c602475264c9064b8a">
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mfpu=fpv4-sp-d16</arg>
+      <arg>-mthumb</arg>
+      <arg>-o</arg>
+      <output />
+      <source id="s74" />
+    </unit>
+    <unit id="u78" tool="llvm-objcopy" file="objects/u78/030-18-pointwise_mont.o" sha256="7bf96277142fab47ba6f2d28bc915bd946f411731052fdb43d6e6112b0d783a7" check="7bf96277142fab47ba6f2d28bc915bd946f411731052fdb43d6e6112b0d783a7">
+      <source id="s73" prefix="--redefine-syms=" />
+      <input id="u77" />
+      <output />
+    </unit>
+    <unit id="u79" tool="clang" file="objects/u79/kernel-512-ntt.o" sha256="6efdea554f136f9ac00ba067ede8cbc32be3f3f6ed403201d274eba243a7d174" check="d1212021d84e754c1f4bc9cdd963e69fc04fa14cf46784ac9f0641a7a6541bb5">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-mfloat-abi=soft</arg>
+      <arg>-ffreestanding</arg>
+      <arg>-fno-builtin</arg>
+      <arg>-fno-unwind-tables</arg>
+      <arg>-fno-asynchronous-unwind-tables</arg>
+      <arg>-mno-unaligned-access</arg>
+      <arg>-ffunction-sections</arg>
+      <arg>-fdata-sections</arg>
+      <arg>-Os</arg>
+      <arg>-Wno-unknown-attributes</arg>
+      <arg>-c</arg>
+      <source id="s76" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="u80" tool="llvm-objcopy" file="objects/u80/031-kernel.o" sha256="51aedf944e47537e80ba8e06c546fdacca27dbf7cf6a720285bc3c1a92d5f74d" check="fe2aca93ae394bb7653428a244c1d60bdc782eb5de34b738c674223faf0d70d2">
+      <source id="s75" prefix="--redefine-syms=" />
+      <input id="u79" />
+      <output />
+    </unit>
+    <unit id="u81" tool="clang" file="objects/u81/kernel-1024-ntt.o" sha256="62410e3f3fffd547b48c0980dbe40a14a53ac328d9599def08fb692b4b2197b0" check="75109dcaf8b4cd91ebb128f4024ae9726da54d4017e0ab47cb6811e8d4d1b4b4">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-mfloat-abi=soft</arg>
+      <arg>-ffreestanding</arg>
+      <arg>-fno-builtin</arg>
+      <arg>-fno-unwind-tables</arg>
+      <arg>-fno-asynchronous-unwind-tables</arg>
+      <arg>-mno-unaligned-access</arg>
+      <arg>-ffunction-sections</arg>
+      <arg>-fdata-sections</arg>
+      <arg>-Os</arg>
+      <arg>-Wno-unknown-attributes</arg>
+      <arg>-c</arg>
+      <source id="s78" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="u82" tool="llvm-objcopy" file="objects/u82/032-kernel.o" sha256="5e9f5cef9a83d98a07a12102543f0a3c5c6d5f671896f7bf6c9d0a2d4eaeb4b6" check="b49ddfe4eff03967e17cd244920a25f823505cf866cc40c12a347a1e3e16353e">
+      <source id="s77" prefix="--redefine-syms=" />
+      <input id="u81" />
+      <output />
+    </unit>
+    <unit id="u83" tool="arm-none-eabi-as" file="objects/u83/20-fastinvntt.o" sha256="b3ee53a8e57445b265581cb8f84d10c930572c73e9f981ee2df045e5d509715b" check="b3ee53a8e57445b265581cb8f84d10c930572c73e9f981ee2df045e5d509715b">
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mfpu=fpv4-sp-d16</arg>
+      <arg>-mthumb</arg>
+      <arg>-o</arg>
+      <output />
+      <source id="s80" />
+    </unit>
+    <unit id="u84" tool="llvm-objcopy" file="objects/u84/033-20-fastinvntt.o" sha256="10069012e4834eacef3f3e2c010a8ca2bf1d5ab0aa6fabcf80c83f2ca160bdfa" check="10069012e4834eacef3f3e2c010a8ca2bf1d5ab0aa6fabcf80c83f2ca160bdfa">
+      <source id="s79" prefix="--redefine-syms=" />
+      <input id="u83" />
+      <output />
+    </unit>
+    <unit id="u85" tool="clang" file="objects/u85/81-bound.o" sha256="b9341a739d4c01d558b91d9dc41cc49c54134d4eccb43f77721f038c9dcd77a0" check="345fcbf6a32842e81265b4d093dc7ecccc9fba9e87c82802811da74de942544d">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-mfloat-abi=soft</arg>
+      <arg>-ffreestanding</arg>
+      <arg>-fno-builtin</arg>
+      <arg>-fno-unwind-tables</arg>
+      <arg>-fno-asynchronous-unwind-tables</arg>
+      <arg>-mno-unaligned-access</arg>
+      <arg>-ffunction-sections</arg>
+      <arg>-fdata-sections</arg>
+      <arg>-Oz</arg>
+      <arg>-Wno-unknown-attributes</arg>
+      <arg>-c</arg>
+      <source id="s82" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="u86" tool="llvm-objcopy" file="objects/u86/034-target_workspace.o" sha256="49a70b0dae137f12cad1d030204478aefafd50aa764d66537f9374c5d7bda539" check="087d792669b4e75281bac20dca5fad12d709f95481485ae23b65b9d851a3f08a">
+      <source id="s81" prefix="--redefine-syms=" />
+      <input id="u85" />
+      <output />
+    </unit>
+    <unit id="u87" tool="clang" file="objects/u87/kernel-512-combined.o" sha256="f87718a6fea10074f5553aba6619faffd2bc4ba6f9110a28caebfe0d824fc430" check="dab08e5c219481f45007762c8dba5c3a7c9dc328d840983821125c42e21bf8e4">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-mfloat-abi=soft</arg>
+      <arg>-ffreestanding</arg>
+      <arg>-fno-builtin</arg>
+      <arg>-fno-unwind-tables</arg>
+      <arg>-fno-asynchronous-unwind-tables</arg>
+      <arg>-mno-unaligned-access</arg>
+      <arg>-ffunction-sections</arg>
+      <arg>-fdata-sections</arg>
+      <arg>-Os</arg>
+      <arg>-Wno-unknown-attributes</arg>
+      <arg>-c</arg>
+      <source id="s84" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="u88" tool="llvm-objcopy" file="objects/u88/035-kernel.o" sha256="8149fe0b397995194e2ddccd6bc10a8603b38013d3adfd9eadf4cdfc7a656f39" check="e5c3f63e4077dab93ac1352bb4ab87193d1ab61b5b1a4ed2f66551c840c32e00">
+      <source id="s83" prefix="--redefine-syms=" />
+      <input id="u87" />
+      <output />
+    </unit>
+    <unit id="u89" tool="clang" file="objects/u89/80-query.o" sha256="c6e9dc806dd14c62f92d8a086627498847d8f3529e927ef5289a1bcf22a8993d" check="d047017e9d65d3a6164d92217ed0fdc82b16303812e07475bb43777929f53a99">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-mfloat-abi=soft</arg>
+      <arg>-ffreestanding</arg>
+      <arg>-fno-builtin</arg>
+      <arg>-fno-unwind-tables</arg>
+      <arg>-fno-asynchronous-unwind-tables</arg>
+      <arg>-mno-unaligned-access</arg>
+      <arg>-ffunction-sections</arg>
+      <arg>-fdata-sections</arg>
+      <arg>-Oz</arg>
+      <arg>-Wno-unknown-attributes</arg>
+      <arg>-c</arg>
+      <source id="s86" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="u90" tool="llvm-objcopy" file="objects/u90/036-resource_plan.o" sha256="4a595df226c7addeff7fbccca21ef1b419170352baa1125f7a8db0aea782fe72" check="d68569f391d90a6fd802ca3bae4b8f1bb2ee74e8a51d5128ec5bd6520ce4ca90">
+      <source id="s85" prefix="--redefine-syms=" />
+      <input id="u89" />
+      <output />
+    </unit>
+    <unit id="u91" tool="llvm-objcopy" file="objects/u91/037-resource_plan.o" sha256="fb277fe23d8acaafa6c314eef8aa6611f6cbe165e95c2bace85b45f8068c4128" check="f098fb5381d6171f69c95a1c4576708e8d7331618cafce3a695fbc645eca2b41">
+      <source id="s87" prefix="--redefine-syms=" />
+      <input id="u89" />
+      <output />
+    </unit>
+    <unit id="u92" tool="llvm-objcopy" file="objects/u92/038-resource_plan.o" sha256="20e253326e3b258e1a384e0f11ab4a158a0fffc6abb5745419327a02b9555249" check="6b347a1bd22487a6f96fab5a47f739b2593b27dabdfd45fdbb7d66526e1e452d">
+      <source id="s88" prefix="--redefine-syms=" />
+      <input id="u89" />
+      <output />
+    </unit>
+    <unit id="u93" tool="llvm-objcopy" file="objects/u93/039-resource_plan.o" sha256="8fec3f875c4cf102ba3299ed733d882562cfa92ef5b6a15a9fea742681f6cb9b" check="657a9226f8c1207be1fb4dd5cbedb480bb0218d1a4177a295a954a98ee029188">
+      <source id="s89" prefix="--redefine-syms=" />
+      <input id="u89" />
+      <output />
+    </unit>
+    <unit id="u94" tool="llvm-objcopy" file="objects/u94/040-resource_plan.o" sha256="d34ec80be5ca82bbfa09d12d24f802c09e33883e465db6fe3a686686dfad372a" check="cedc14e711e640e2a03755ad799a6097e69ae7559d745b26cb0bef397925fac8">
+      <source id="s90" prefix="--redefine-syms=" />
+      <input id="u89" />
+      <output />
+    </unit>
+    <unit id="u95" tool="llvm-objcopy" file="objects/u95/041-resource_plan.o" sha256="fe1a95d5331e8fb228af28b71f0d09ebed8347943b83322bb6a6f6ee264e0c1a" check="fd20f680489339f1d0cab344d3c934f84df789c5ec0a3e3f0b829d0fe1524742">
+      <source id="s91" prefix="--redefine-syms=" />
+      <input id="u89" />
+      <output />
+    </unit>
+    <unit id="u96" tool="llvm-objcopy" file="objects/u96/042-resource_plan.o" sha256="222d830f433ba0e4ae9cf581c22d74d1c09a8d9769b5c568bda1b1a76b169ab6" check="042f5fe51e06a5987612bcbaf0cdbff5dfc66b3af1a0160a99dc518fe3bca56f">
+      <source id="s92" prefix="--redefine-syms=" />
+      <input id="u89" />
+      <output />
+    </unit>
+    <unit id="u97" tool="llvm-objcopy" file="objects/u97/043-resource_plan.o" sha256="7fb00adf84e30c889293701de7e6f7e7bf32e1cc71254b4475b5f1042a2f5bb0" check="2b212397057bc9f981495963c41843b3f1b30804f808d110678cdbca5cc430a5">
+      <source id="s93" prefix="--redefine-syms=" />
+      <input id="u89" />
+      <output />
+    </unit>
+    <unit id="u98" tool="llvm-objcopy" file="objects/u98/044-resource_plan.o" sha256="3e2ae298a71a0a9faa660025bb49f5870a87b4987614702faae8cac9dcecba6a" check="7e750fa7b036badaaf15a75842a4a4d9f61eb543bdad005a013bb38cb43943f8">
+      <source id="s94" prefix="--redefine-syms=" />
+      <input id="u89" />
+      <output />
+    </unit>
+    <unit id="u99" tool="llvm-objcopy" file="objects/u99/045-resource_plan.o" sha256="e3f306832e702f4b41679d73171a0d42d9c3a32ef8ba1933bf43755b1d05bdf5" check="1246c5cace125523d26bbcd5d3bc5a724073d057dd192699177733ec7305eb18">
+      <source id="s95" prefix="--redefine-syms=" />
+      <input id="u89" />
+      <output />
+    </unit>
+    <unit id="u100" tool="llvm-objcopy" file="objects/u100/046-resource_plan.o" sha256="e7061406727ec058704f943fc52ffe141d5d4273ca60cdf285f2fe63fc623a2b" check="5b45db567cc278c2d328744ba33b30ff6746d8d23bc0774c08ec0f4f9f117272">
+      <source id="s96" prefix="--redefine-syms=" />
+      <input id="u89" />
+      <output />
+    </unit>
+    <unit id="u101" tool="clang" file="objects/u101/81-bound.o" sha256="cef48ebef7bbf839d067fbbfe17c636352701518cb06322bfb6d124f3c569f67" check="18e25e3de3adbbd345972caf4fe76a62d206838096703a4351c3fc381d6282a7">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-mfloat-abi=soft</arg>
+      <arg>-ffreestanding</arg>
+      <arg>-fno-builtin</arg>
+      <arg>-fno-unwind-tables</arg>
+      <arg>-fno-asynchronous-unwind-tables</arg>
+      <arg>-mno-unaligned-access</arg>
+      <arg>-ffunction-sections</arg>
+      <arg>-fdata-sections</arg>
+      <arg>-Oz</arg>
+      <arg>-Wno-unknown-attributes</arg>
+      <arg>-c</arg>
+      <source id="s98" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="u102" tool="llvm-objcopy" file="objects/u102/047-target_workspace.o" sha256="a0a45cff85ca3c7e096d7e40f26602eb893e67e9f1e0d263057b42e104c876dc" check="fea5fedbda1d1ccac6f6c682fa2f32cb77808834e61b84f87512ed1a242e49d0">
+      <source id="s97" prefix="--redefine-syms=" />
+      <input id="u101" />
+      <output />
+    </unit>
+    <unit id="u103" tool="clang" file="objects/u103/81-bound.o" sha256="d0025938d9dd8c66ce557c701bdbd8c106bb7cde65984073903fe43eecdf3fce" check="49ce31e638318d94c4551c792db5594bfa9746d204f7b9244773370e25d9f28f">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-mfloat-abi=soft</arg>
+      <arg>-ffreestanding</arg>
+      <arg>-fno-builtin</arg>
+      <arg>-fno-unwind-tables</arg>
+      <arg>-fno-asynchronous-unwind-tables</arg>
+      <arg>-mno-unaligned-access</arg>
+      <arg>-ffunction-sections</arg>
+      <arg>-fdata-sections</arg>
+      <arg>-Oz</arg>
+      <arg>-Wno-unknown-attributes</arg>
+      <arg>-c</arg>
+      <source id="s100" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="u104" tool="llvm-objcopy" file="objects/u104/048-target_workspace.o" sha256="3a50699c3f2f15326c151792f5f34debeb3219d7b3d0eea6f5d60856924fecc3" check="16f8a042525f6fc5f2dba76043b7d06b404185840a5dfa04500dd6fbe8155aa5">
+      <source id="s99" prefix="--redefine-syms=" />
+      <input id="u103" />
+      <output />
+    </unit>
+    <unit id="u105" tool="clang" file="objects/u105/81-bound.o" sha256="d62f9c0cce9bf57b9e24d0720c57760c9e3bbb5420fa7ab60655b4ae14fd274c" check="6478c2f36177c6c2a60c453a3fbb124b5ff0094a392e326fefa8bc16abd4a28a">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-mfloat-abi=soft</arg>
+      <arg>-ffreestanding</arg>
+      <arg>-fno-builtin</arg>
+      <arg>-fno-unwind-tables</arg>
+      <arg>-fno-asynchronous-unwind-tables</arg>
+      <arg>-mno-unaligned-access</arg>
+      <arg>-ffunction-sections</arg>
+      <arg>-fdata-sections</arg>
+      <arg>-Oz</arg>
+      <arg>-Wno-unknown-attributes</arg>
+      <arg>-c</arg>
+      <source id="s102" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="u106" tool="llvm-objcopy" file="objects/u106/049-target_workspace.o" sha256="23f2dc366239b0b61ee10dee3fda8de47985138247af4f1644423eb1429ab0ac" check="8ae065b457d445da83f6be4ae5792b7e3ae69bdfb97846227482612fdb5216b2">
+      <source id="s101" prefix="--redefine-syms=" />
+      <input id="u105" />
+      <output />
+    </unit>
+    <unit id="u107" tool="clang" file="objects/u107/kernel-87-paired.o" sha256="84d38456890c9a7b82121a070920112ba8280f18ae7ed1e60efc07dec3e6ab0a" check="f23c3b7567872e6cd305714ff1a8bd386ac5349b99c0a0b3a817251c0643f8ec">
+      <arg>-fno-unroll-loops</arg>
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-mfloat-abi=soft</arg>
+      <arg>-ffreestanding</arg>
+      <arg>-fno-builtin</arg>
+      <arg>-fno-unwind-tables</arg>
+      <arg>-fno-asynchronous-unwind-tables</arg>
+      <arg>-mno-unaligned-access</arg>
+      <arg>-ffunction-sections</arg>
+      <arg>-fdata-sections</arg>
+      <arg>-O2</arg>
+      <arg>-Wno-unknown-attributes</arg>
+      <arg>-c</arg>
+      <source id="s104" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="u108" tool="llvm-objcopy" file="objects/u108/050-kernel.o" sha256="1bab4d9b185c83f83216c06836bd593a50b491eb907ac03780e93047baa63400" check="2c4b9a3c28c15c4e46d5881648b63e73368f36cb13402ad6454d357e46e423c2">
+      <source id="s103" prefix="--redefine-syms=" />
+      <input id="u107" />
+      <output />
+    </unit>
+    <unit id="u109" tool="clang" file="objects/u109/11-public.o" sha256="dc1cf10fc6c36d42d35e2bd5e80d82aee2e271e4c649b633467ee74aa8adc607" check="1432f3482885f649d3677dcf0c332e172554e0086db475e58ce368cf02faea08">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-mfloat-abi=soft</arg>
+      <arg>-ffreestanding</arg>
+      <arg>-fno-builtin</arg>
+      <arg>-fno-unwind-tables</arg>
+      <arg>-fno-asynchronous-unwind-tables</arg>
+      <arg>-mno-unaligned-access</arg>
+      <arg>-ffunction-sections</arg>
+      <arg>-fdata-sections</arg>
+      <arg>-Oz</arg>
+      <arg>-Wno-unknown-attributes</arg>
+      <arg>-c</arg>
+      <source id="s106" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="u110" tool="llvm-objcopy" file="objects/u110/051-public.o" sha256="fedcd63d933744723b91417076ef867ca43765c45605cf223f92022148d90ee4" check="49fb776fc6a00570a7188436dc95a23d8f218dc3d124497b771e9dde0a7646b6">
+      <source id="s105" prefix="--redefine-syms=" />
+      <input id="u109" />
+      <output />
+    </unit>
+    <unit id="u111" tool="llvm-objcopy" file="objects/u111/052-public.o" sha256="984063821d961540d9e93fc05f5cfab25adf3bcce2d2deec80f57098bd98bafb" check="a167d6627b7cb46a2f46e79e486335cb718308c75f8bc97ecdc94b3765c1a57d">
+      <source id="s107" prefix="--redefine-syms=" />
+      <input id="u109" />
+      <output />
+    </unit>
+    <unit id="u112" tool="clang" file="objects/u112/adapter.o" sha256="80d6ae7604fd98f47570e2c4798fe6da662dd8c1005c951b6895c948dcd7f76c" check="1e802210dca11672a2029be043fb53b7e6c372106f8de52af0ceae63d1c03165">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-mfloat-abi=soft</arg>
+      <arg>-ffreestanding</arg>
+      <arg>-fno-builtin</arg>
+      <arg>-fno-unwind-tables</arg>
+      <arg>-fno-asynchronous-unwind-tables</arg>
+      <arg>-mno-unaligned-access</arg>
+      <arg>-ffunction-sections</arg>
+      <arg>-fdata-sections</arg>
+      <arg>-Oz</arg>
+      <arg>-Wno-unknown-attributes</arg>
+      <arg>-c</arg>
+      <source id="s109" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="u113" tool="llvm-objcopy" file="objects/u113/weak-adapter.o" sha256="df206b8ec2eaa01eec1da73708fa211ffa36f49361b5223ee9a25432c3e608ce" check="bc02e853ab3a8b36966a1e6f3f211c5f062e6d8c03aabdec2e077745fe04e64a">
+      <arg>--weaken-symbol=lc_dsa_workspace_bound</arg>
+      <input id="u112" />
+      <output />
+    </unit>
+    <unit id="u114" tool="llvm-objcopy" file="objects/u114/053-legacy-adapter.o" sha256="6635973294d5b906d6b2427c3571602ea8a0e8210f4a4ab98b783f5697c37c8d" check="5e62fd565f906b8063d056f3d2ab596e6fdd4010d0705f6c98da915fcbe33764">
+      <source id="s108" prefix="--redefine-syms=" />
+      <input id="u113" />
+      <output />
+    </unit>
+    <unit id="u115" tool="llvm-objcopy" file="objects/u115/054-legacy-adapter.o" sha256="b380fbd3361164d288df645a2591f82015d2ed32ac75dc3dcf378eeee8bd1ea1" check="f9ebcc436039fb598a6d4e1d225c183e7975f86560d223b5525b98710ae30694">
+      <source id="s110" prefix="--redefine-syms=" />
+      <input id="u113" />
+      <output />
+    </unit>
+    <unit id="u116" tool="clang" file="objects/u116/kernel-768-combined.o" sha256="09b413cb53ad351788ac685f02a7a3459345652272a0d4a185814c3d33d388c5" check="e99e5e60ea1b2fa3f2cfa6d2824bde88abc005fc45a1f592fe9ac270b35064e1">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-mfloat-abi=soft</arg>
+      <arg>-ffreestanding</arg>
+      <arg>-fno-builtin</arg>
+      <arg>-fno-unwind-tables</arg>
+      <arg>-fno-asynchronous-unwind-tables</arg>
+      <arg>-mno-unaligned-access</arg>
+      <arg>-ffunction-sections</arg>
+      <arg>-fdata-sections</arg>
+      <arg>-Os</arg>
+      <arg>-Wno-unknown-attributes</arg>
+      <arg>-c</arg>
+      <source id="s112" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="u117" tool="llvm-objcopy" file="objects/u117/055-kernel.o" sha256="3576abb5b1712fb95e9598a633c582789d3c6996fea348e9d2d1a84d9eda18d6" check="400a10e1172462f2247fa3f7fbd7180d94261e51798fea2164c9ac0057917dce">
+      <source id="s111" prefix="--redefine-syms=" />
+      <input id="u116" />
+      <output />
+    </unit>
+    <unit id="u118" tool="clang" file="objects/u118/81-bound.o" sha256="f0d7b371a4041fdb0e8606a5a83f6385c65bf3410db79d3d9d8a13dcad578793" check="aa6c6bd5c98812f993775506b6289fb126081105f0f4aca048e42b740e1da602">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-mfloat-abi=soft</arg>
+      <arg>-ffreestanding</arg>
+      <arg>-fno-builtin</arg>
+      <arg>-fno-unwind-tables</arg>
+      <arg>-fno-asynchronous-unwind-tables</arg>
+      <arg>-mno-unaligned-access</arg>
+      <arg>-ffunction-sections</arg>
+      <arg>-fdata-sections</arg>
+      <arg>-Oz</arg>
+      <arg>-Wno-unknown-attributes</arg>
+      <arg>-c</arg>
+      <source id="s114" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="u119" tool="llvm-objcopy" file="objects/u119/056-target_workspace.o" sha256="51ceb703abb1976b1993f313f0f09d0320264b169c1c5cece3be7937c02d499d" check="219308f88bcf69456e2d87fa309f40a4070070a1f5d1e66b8a6f0772208787ae">
+      <source id="s113" prefix="--redefine-syms=" />
+      <input id="u118" />
+      <output />
+    </unit>
+    <unit id="u120" tool="clang" file="objects/u120/81-bound.o" sha256="f0f1eccfa2b0e1545352ee749a2758d6b27ada79325020d97bc18aba50db9840" check="42599dcc939bf84a1b856f3f57fa24fcb767e0433d7a3de3668fc4528fadf8a2">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-mfloat-abi=soft</arg>
+      <arg>-ffreestanding</arg>
+      <arg>-fno-builtin</arg>
+      <arg>-fno-unwind-tables</arg>
+      <arg>-fno-asynchronous-unwind-tables</arg>
+      <arg>-mno-unaligned-access</arg>
+      <arg>-ffunction-sections</arg>
+      <arg>-fdata-sections</arg>
+      <arg>-Oz</arg>
+      <arg>-Wno-unknown-attributes</arg>
+      <arg>-c</arg>
+      <source id="s116" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="u121" tool="llvm-objcopy" file="objects/u121/057-target_workspace.o" sha256="3604336cbd2bbe15cef75e6a8a82e1032f4853b3066ee3f157c0676acbee6da1" check="2705a5b277a400c4a0ee216708edf3ec977d4dda3d5c4543f8ba51303dd96594">
+      <source id="s115" prefix="--redefine-syms=" />
+      <input id="u120" />
+      <output />
+    </unit>
+    <unit id="u122" tool="arm-none-eabi-as" file="objects/u122/16-ntt.o" sha256="f3880aa0fd8a175d85c701f1e78b8311ddea7e7410103ff142e30d1db461c2d3" check="06ee44f039d56da4d2684404300fc3fcd2b5a35aa07766ed73c45d32eaee8c6e">
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mfpu=fpv4-sp-d16</arg>
+      <arg>-mthumb</arg>
+      <arg>-o</arg>
+      <output />
+      <source id="s118" />
+    </unit>
+    <unit id="u123" tool="llvm-objcopy" file="objects/u123/058-16-ntt.o" sha256="f186c872ffee40ded226c610d01972b72a4c1d3f4147cb017ee862cbb682b183" check="d085b7bf56df0905e2bc19f2d1c4435021780b12ef7ee314aa645beb71ba9e66">
+      <source id="s117" prefix="--redefine-syms=" />
+      <input id="u122" />
+      <output />
+    </unit>
+    <unit id="u124" tool="clang" file="objects/u124/kernel-44-native.o" sha256="c9c9922af274b9c633651ee2730991f3e8d937ec10ab1fd3bc5000c25ed34b12" check="6e70677a35dfe19434c8990346adf69380e8ae8b3ffc7af791a0933cfb53f088">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-mfloat-abi=soft</arg>
+      <arg>-ffreestanding</arg>
+      <arg>-fno-builtin</arg>
+      <arg>-fno-unwind-tables</arg>
+      <arg>-fno-asynchronous-unwind-tables</arg>
+      <arg>-mno-unaligned-access</arg>
+      <arg>-ffunction-sections</arg>
+      <arg>-fdata-sections</arg>
+      <arg>-Oz</arg>
+      <arg>-Wno-unknown-attributes</arg>
+      <arg>-c</arg>
+      <source id="s120" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="u125" tool="llvm-objcopy" file="objects/u125/059-kernel.o" sha256="0eb42455cf40f7668f449fd2e3e0b66025262b01469206b236e6bb4bc92173f8" check="47f5a3d6ee7d21585473dc6473c6b9c4c08426cca76b5301b2be3d39ca6c4c9f">
+      <source id="s119" prefix="--redefine-syms=" />
+      <input id="u124" />
+      <output />
+    </unit>
+    <unit id="u126" tool="clang" file="objects/u126/kernel-768-ntt.o" sha256="2e2d6bb56ef74efdb02cd54340b86b19da3441687e62c159198e93743f60d50a" check="de2bae52728976f917930cad9c5b8369c1c0789e2225beef33583c41d6458337">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-mfloat-abi=soft</arg>
+      <arg>-ffreestanding</arg>
+      <arg>-fno-builtin</arg>
+      <arg>-fno-unwind-tables</arg>
+      <arg>-fno-asynchronous-unwind-tables</arg>
+      <arg>-mno-unaligned-access</arg>
+      <arg>-ffunction-sections</arg>
+      <arg>-fdata-sections</arg>
+      <arg>-Os</arg>
+      <arg>-Wno-unknown-attributes</arg>
+      <arg>-c</arg>
+      <source id="s122" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="u127" tool="llvm-objcopy" file="objects/u127/060-kernel.o" sha256="05972c9141d99639816503447d4856dd21834155785583976974c889c002ebdd" check="7e6c35674614a3a67ee8442d1c78b8af0a09e7297ca834c5eafbefe49c16ff50">
+      <source id="s121" prefix="--redefine-syms=" />
+      <input id="u126" />
+      <output />
+    </unit>
+    <unit id="u128" tool="arm-none-eabi-as" file="objects/u128/14-keccakf1600.o" sha256="a5df61ca31d682f73fe51599e055c2ae349d3b7f091fcc1e4104c1a835508d74" check="221f9c686ab51ed435f927e1f2c7bbadb9ba838d21f7d8e69fd7692e68bb7171">
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mfpu=fpv4-sp-d16</arg>
+      <arg>-mthumb</arg>
+      <arg>-o</arg>
+      <output />
+      <source id="s124" />
+    </unit>
+    <unit id="u129" tool="llvm-objcopy" file="objects/u129/046-14-keccakf1600.o" sha256="17e40d581b1cf0ba508c1bd8b66a6533985e09cefbb7434d5e7037cb20ac760d" check="bcef7af1d5a6aaa2e06e7c9d824cdf879a86f1bb0bf77b77cf14d45965e623ef">
+      <source id="s123" prefix="--redefine-syms=" />
+      <input id="u128" />
+      <output />
+    </unit>
+    <unit id="u130" tool="clang" file="objects/u130/mlkem_roots.o" sha256="3e95d027ac1f81306249fcc7c87be382ccdad9c47c0bc8a08be0550b0e76d36c" check="3e95d027ac1f81306249fcc7c87be382ccdad9c47c0bc8a08be0550b0e76d36c">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-mfloat-abi=soft</arg>
+      <arg>-ffreestanding</arg>
+      <arg>-fno-builtin</arg>
+      <arg>-fno-unwind-tables</arg>
+      <arg>-fno-asynchronous-unwind-tables</arg>
+      <arg>-mno-unaligned-access</arg>
+      <arg>-ffunction-sections</arg>
+      <arg>-fdata-sections</arg>
+      <arg>-Os</arg>
+      <arg>-Wno-unknown-attributes</arg>
+      <arg>-c</arg>
+      <source id="s125" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="u131" tool="clang" file="objects/u131/dsa_sign.o" sha256="1684006cb95928df0082851bbf0926841a03aa95b5e5ff371a2303080a00eb73" check="d508cac4680048f2306fd8f8afd3b6e1807507c77379fe28064b64902b2becd0">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-mfloat-abi=soft</arg>
+      <arg>-ffreestanding</arg>
+      <arg>-fno-builtin</arg>
+      <arg>-fno-unwind-tables</arg>
+      <arg>-fno-asynchronous-unwind-tables</arg>
+      <arg>-mno-unaligned-access</arg>
+      <arg>-ffunction-sections</arg>
+      <arg>-fdata-sections</arg>
+      <arg>-Oz</arg>
+      <arg>-Wno-unknown-attributes</arg>
+      <arg>-c</arg>
+      <source id="s126" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="u132" tool="clang" file="objects/u132/dsa_ops.o" sha256="0b1b52a27536823e2a1e887e2efeb566211091814694e5d7698a0053ab20946a" check="69cb10852324ccc337bfe58e435a1988f193bc088b8f66464ccc77665e1f3ad3">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-mfloat-abi=soft</arg>
+      <arg>-ffreestanding</arg>
+      <arg>-fno-builtin</arg>
+      <arg>-fno-unwind-tables</arg>
+      <arg>-fno-asynchronous-unwind-tables</arg>
+      <arg>-mno-unaligned-access</arg>
+      <arg>-ffunction-sections</arg>
+      <arg>-fdata-sections</arg>
+      <arg>-Oz</arg>
+      <arg>-Wno-unknown-attributes</arg>
+      <arg>-c</arg>
+      <source id="s127" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="u133" tool="clang" file="objects/u133/memory.o" sha256="113533a573bb8a84913330308ebf6f6b1fbce1e3df2f5d1c40e30391c06ea7ed" check="113533a573bb8a84913330308ebf6f6b1fbce1e3df2f5d1c40e30391c06ea7ed">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-mfloat-abi=soft</arg>
+      <arg>-ffreestanding</arg>
+      <arg>-fno-builtin</arg>
+      <arg>-fno-unwind-tables</arg>
+      <arg>-fno-asynchronous-unwind-tables</arg>
+      <arg>-mno-unaligned-access</arg>
+      <arg>-ffunction-sections</arg>
+      <arg>-fdata-sections</arg>
+      <arg>-Os</arg>
+      <arg>-Wno-unknown-attributes</arg>
+      <arg>-c</arg>
+      <source id="s128" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="u134" tool="clang" file="objects/u134/kem.o" sha256="cc767214aba55d05645c2512ea6711c74cdbea5562003b5ce7cc38f81609fa54" check="f0ac0d1f464db28b8e07ae317df01816d02411430432911b759b50f83a4dd6fe">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-mfloat-abi=soft</arg>
+      <arg>-ffreestanding</arg>
+      <arg>-fno-builtin</arg>
+      <arg>-fno-unwind-tables</arg>
+      <arg>-fno-asynchronous-unwind-tables</arg>
+      <arg>-mno-unaligned-access</arg>
+      <arg>-ffunction-sections</arg>
+      <arg>-fdata-sections</arg>
+      <arg>-Oz</arg>
+      <arg>-Wno-unknown-attributes</arg>
+      <arg>-c</arg>
+      <source id="s129" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="u135" tool="clang" file="objects/u135/dsa.o" sha256="1865e3b724e8821b6abf231990e192407c21fb7c493639a3825c1c981771fb20" check="5a601dd068346236fec20c205dbdeaa2e5da5371cd10f76c498525979dd4de85">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-mfloat-abi=soft</arg>
+      <arg>-ffreestanding</arg>
+      <arg>-fno-builtin</arg>
+      <arg>-fno-unwind-tables</arg>
+      <arg>-fno-asynchronous-unwind-tables</arg>
+      <arg>-mno-unaligned-access</arg>
+      <arg>-ffunction-sections</arg>
+      <arg>-fdata-sections</arg>
+      <arg>-Oz</arg>
+      <arg>-Wno-unknown-attributes</arg>
+      <arg>-c</arg>
+      <source id="s130" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="u136" tool="clang" file="objects/u136/registry.o" sha256="1ab9f740b088e332a7760cd12312b8246bd2cc9c4eac2aaaf6049fa08687e671" check="04cdde08ae31dbe2e7469256f35f5e233691599afa546ed9290a0cfc50bbd44a">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-mfloat-abi=soft</arg>
+      <arg>-ffreestanding</arg>
+      <arg>-fno-builtin</arg>
+      <arg>-fno-unwind-tables</arg>
+      <arg>-fno-asynchronous-unwind-tables</arg>
+      <arg>-mno-unaligned-access</arg>
+      <arg>-ffunction-sections</arg>
+      <arg>-fdata-sections</arg>
+      <arg>-Oz</arg>
+      <arg>-Wno-unknown-attributes</arg>
+      <arg>-c</arg>
+      <source id="s131" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="u137" tool="ld.lld" file="objects/u137/joined.o" sha256="1f1ed111aa6b8cc6189cda6ac0612c5414f7844bda0c8d09309b2ca8eda745aa" check="107dd657986392aca44a39ff96cac146423330a3a35199f8d7706e4fc93ba9ae">
+      <arg>-r</arg>
+      <input id="u134" />
+      <input id="u135" />
+      <input id="u136" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="u138" tool="ld.lld" file="stm32f407-unified.elf" sha256="a2d8fce9aec7f9ad589b366b713c33c1963d5417df8529b50caac2a48c9a9664" check="a691cea4fbc945a011b484631629e81991a1e2decd269bcacbb70e5b69bb03bd">
+      <arg>--gc-sections</arg>
+      <arg>--wrap=memcpy</arg>
+      <arg>--wrap=memset</arg>
+      <arg>--icf=all</arg>
+      <arg>-u</arg>
+      <arg>pqm10_lc_dsa_workspace_bound</arg>
+      <arg>-u</arg>
+      <arg>pqm11_lc_dsa_workspace_bound</arg>
+      <arg>-u</arg>
+      <arg>pqm13_lc_dsa_workspace_bound</arg>
+      <arg>-u</arg>
+      <arg>pqm2_lc_dsa_workspace_bound</arg>
+      <arg>-u</arg>
+      <arg>pqm34_lc_dsa_workspace_bound</arg>
+      <arg>-u</arg>
+      <arg>pqm36_lc_resource_algorithm_bytes</arg>
+      <arg>-u</arg>
+      <arg>pqm36_lc_resource_make_plan</arg>
+      <arg>-u</arg>
+      <arg>pqm36_lc_resource_query</arg>
+      <arg>-u</arg>
+      <arg>pqm37_lc_resource_algorithm_bytes</arg>
+      <arg>-u</arg>
+      <arg>pqm37_lc_resource_make_plan</arg>
+      <arg>-u</arg>
+      <arg>pqm37_lc_resource_query</arg>
+      <arg>-u</arg>
+      <arg>pqm38_lc_resource_algorithm_bytes</arg>
+      <arg>-u</arg>
+      <arg>pqm38_lc_resource_make_plan</arg>
+      <arg>-u</arg>
+      <arg>pqm38_lc_resource_query</arg>
+      <arg>-u</arg>
+      <arg>pqm39_lc_resource_algorithm_bytes</arg>
+      <arg>-u</arg>
+      <arg>pqm39_lc_resource_make_plan</arg>
+      <arg>-u</arg>
+      <arg>pqm39_lc_resource_query</arg>
+      <arg>-u</arg>
+      <arg>pqm40_lc_resource_algorithm_bytes</arg>
+      <arg>-u</arg>
+      <arg>pqm40_lc_resource_make_plan</arg>
+      <arg>-u</arg>
+      <arg>pqm40_lc_resource_query</arg>
+      <arg>-u</arg>
+      <arg>pqm41_lc_resource_algorithm_bytes</arg>
+      <arg>-u</arg>
+      <arg>pqm41_lc_resource_make_plan</arg>
+      <arg>-u</arg>
+      <arg>pqm41_lc_resource_query</arg>
+      <arg>-u</arg>
+      <arg>pqm42_lc_resource_algorithm_bytes</arg>
+      <arg>-u</arg>
+      <arg>pqm42_lc_resource_make_plan</arg>
+      <arg>-u</arg>
+      <arg>pqm42_lc_resource_query</arg>
+      <arg>-u</arg>
+      <arg>pqm43_lc_resource_algorithm_bytes</arg>
+      <arg>-u</arg>
+      <arg>pqm43_lc_resource_make_plan</arg>
+      <arg>-u</arg>
+      <arg>pqm43_lc_resource_query</arg>
+      <arg>-u</arg>
+      <arg>pqm44_lc_resource_algorithm_bytes</arg>
+      <arg>-u</arg>
+      <arg>pqm44_lc_resource_make_plan</arg>
+      <arg>-u</arg>
+      <arg>pqm44_lc_resource_query</arg>
+      <arg>-u</arg>
+      <arg>pqm45_lc_resource_algorithm_bytes</arg>
+      <arg>-u</arg>
+      <arg>pqm45_lc_resource_make_plan</arg>
+      <arg>-u</arg>
+      <arg>pqm45_lc_resource_query</arg>
+      <arg>-u</arg>
+      <arg>pqm46_lc_resource_algorithm_bytes</arg>
+      <arg>-u</arg>
+      <arg>pqm46_lc_resource_make_plan</arg>
+      <arg>-u</arg>
+      <arg>pqm46_lc_resource_query</arg>
+      <arg>-u</arg>
+      <arg>pqm47_lc_dsa_workspace_bound</arg>
+      <arg>-u</arg>
+      <arg>pqm48_lc_dsa_workspace_bound</arg>
+      <arg>-u</arg>
+      <arg>pqm49_lc_dsa_workspace_bound</arg>
+      <arg>-u</arg>
+      <arg>pqm56_lc_dsa_workspace_bound</arg>
+      <arg>-u</arg>
+      <arg>pqm57_lc_dsa_workspace_bound</arg>
+      <arg>-u</arg>
+      <arg>pqm5_lc_dsa_workspace_bound</arg>
+      <arg>-T</arg>
+      <source id="s0" />
+      <map />
+      <input id="u0" />
+      <input id="u1" />
+      <input id="u2" />
+      <input id="u3" />
+      <input id="u4" />
+      <input id="u5" />
+      <input id="u6" />
+      <input id="u7" />
+      <input id="u8" />
+      <input id="u9" />
+      <input id="u10" />
+      <input id="u11" />
+      <input id="u12" />
+      <input id="u13" />
+      <input id="u14" />
+      <input id="u15" />
+      <input id="u16" />
+      <input id="u17" />
+      <input id="u20" />
+      <input id="u22" />
+      <input id="u24" />
+      <input id="u26" />
+      <input id="u27" />
+      <input id="u29" />
+      <input id="u31" />
+      <input id="u33" />
+      <input id="u35" />
+      <input id="u36" />
+      <input id="u38" />
+      <input id="u40" />
+      <input id="u42" />
+      <input id="u44" />
+      <input id="u46" />
+      <input id="u48" />
+      <input id="u50" />
+      <input id="u51" />
+      <input id="u53" />
+      <input id="u55" />
+      <input id="u56" />
+      <input id="u58" />
+      <input id="u61" />
+      <input id="u64" />
+      <input id="u66" />
+      <input id="u67" />
+      <input id="u70" />
+      <input id="u73" />
+      <input id="u75" />
+      <input id="u76" />
+      <input id="u78" />
+      <input id="u80" />
+      <input id="u82" />
+      <input id="u84" />
+      <input id="u86" />
+      <input id="u88" />
+      <input id="u90" />
+      <input id="u91" />
+      <input id="u92" />
+      <input id="u93" />
+      <input id="u94" />
+      <input id="u95" />
+      <input id="u96" />
+      <input id="u97" />
+      <input id="u98" />
+      <input id="u99" />
+      <input id="u100" />
+      <input id="u102" />
+      <input id="u104" />
+      <input id="u106" />
+      <input id="u108" />
+      <input id="u110" />
+      <input id="u111" />
+      <input id="u114" />
+      <input id="u115" />
+      <input id="u117" />
+      <input id="u119" />
+      <input id="u121" />
+      <input id="u123" />
+      <input id="u125" />
+      <input id="u127" />
+      <input id="u129" />
+      <input id="u130" />
+      <input id="u131" />
+      <input id="u132" />
+      <input id="u133" />
+      <input id="u137" />
+      <input id="kem_row" />
+      <input id="sha_extract" />
+      <input id="third_block" />
+      <input id="two_columns" />
+      <input id="narrow_word" />
+      <input id="cached_rows" />
+      <input id="dense_block" />
+      <input id="block_rows" />
+      <input id="fixture" />
+      <input id="rt" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="u139" tool="llvm-objcopy" file="stm32f407-unified.bin" sha256="5cb52be3433a78e380d2f285a90b592ef80ac2d2fb78b891520ff2063b7467db" check="5f312eb2c435e01983c177565d4c68e33c3ac031fc243e125182e7671ccee083">
+      <arg>-O</arg>
+      <arg>binary</arg>
+      <input id="u138" />
+      <output />
+    </unit>
+    <unit id="kem_row" tool="clang" file="extra/kem_row.o" check="088ad004e18d62622af4ed18d2e9dc0a9af54cda87e2beffe474e3a1f6b0bf58">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-mfloat-abi=soft</arg>
+      <arg>-O2</arg>
+      <arg>-fno-unroll-loops</arg>
+      <arg>-ffreestanding</arg>
+      <arg>-fno-strict-aliasing</arg>
+      <arg>-ffunction-sections</arg>
+      <arg>-fdata-sections</arg>
+      <arg>-c</arg>
+      <source id="s_kem_row" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="sha_extract" tool="clang" file="extra/sha_extract.o" check="c8bb2bd70fab70b6b56283763d6d7383ffd6080e5d6c795324c9943d9def1e9d">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-c</arg>
+      <source id="s_sha_extract" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="third_block" tool="clang" file="extra/third_block.o" check="4001b8264c5a58746e30e90de018e6699556459e51276c1c3f85233400c06289">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-c</arg>
+      <source id="s_third_block" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="two_columns" tool="clang" file="extra/two_columns.o" check="1591c62c7c8a17397b742d45230f7402512f430f8d61166b84c9b36529c5eba0">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-c</arg>
+      <source id="s_two_columns" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="cached_rows" tool="clang" file="extra/cached_rows.o" check="ac5a3eaf16db8c24a516647108ee9372349b0c8ecdd00747fe03796382faa4f8">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-c</arg>
+      <source id="s_cached_rows" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="dense_block" tool="clang" file="extra/dense_block.o" check="6a3e50fb3cde88f797095b0f02479e7e1a85c2c74391094d5ea36d8304f89903">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-c</arg>
+      <source id="s_dense_block" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="block_rows" tool="clang" file="extra/block_rows.o" check="c628965f095890416f124c6ee77450f40a72757b1dc1ec631c82826d2ef2a7bb">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-c</arg>
+      <source id="s_block_rows" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="fixture" tool="clang" file="extra/fixture.o" check="e7564e0c565e38e02ddb68c3451737052fb3aca098bce62932b3ad7e4ea8e84c">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-mfloat-abi=soft</arg>
+      <arg>-ffreestanding</arg>
+      <arg>-fno-builtin</arg>
+      <arg>-ffunction-sections</arg>
+      <arg>-fdata-sections</arg>
+      <arg>-Oz</arg>
+      <arg>-c</arg>
+      <source id="s_fixture" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="shift" tool="clang" file="extra/shift.o" check="5d3a04d3b324af038ba200e695c03c1312fa8d858de2cbf4a105cbf0941cbadf">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-c</arg>
+      <source id="s_shift" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+    <unit id="rt" file="extra/libshift.a" tool="llvm-ar" check="cb15b615843e0a344942400f6513b78aa43ae28637e8a1f57716e1b9d856b4e5">
+      <arg>rcs</arg>
+      <output />
+      <input id="shift" />
+    </unit>
+    <unit id="narrow_word" tool="clang" file="extra/narrow_word.o" check="377091ce2080ec738fc9f3ddbc015a37f2911822677fcc201f2ff93302d0f12c">
+      <arg>--target=arm-none-eabi</arg>
+      <arg>-mcpu=cortex-m4</arg>
+      <arg>-mthumb</arg>
+      <arg>-c</arg>
+      <source id="s_narrow_word" />
+      <arg>-o</arg>
+      <output />
+    </unit>
+  </build>
+</configuration>

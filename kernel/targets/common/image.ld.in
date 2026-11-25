@@ -1,0 +1,33 @@
+ENTRY(_start)
+MEMORY {
+  CODE (rx) : ORIGIN = @CODE_BASE@, LENGTH = @CODE_BYTES@
+  RAM (rwx) : ORIGIN = @RAM_BASE@, LENGTH = @RAM_BYTES@
+}
+SECTIONS {
+  .text : { __code_start = .; KEEP(*(.vectors)) KEEP(*(.text.start)) *(.text*) *(.rodata*) } > CODE
+  .ARM.exidx : { *(.ARM.exidx*) } > CODE
+  .data : ALIGN(32) {
+    __data_start = .; __global_pointer$ = . + 0x800; *(.data*) *(.sdata*)
+    . = ALIGN(32); __data_end = .;
+  } > RAM AT > CODE
+  __data_load = LOADADDR(.data);
+  __code_end = LOADADDR(.data) + SIZEOF(.data);
+  .bss (NOLOAD) : ALIGN(32) {
+    __zero_start = .; __bss_start = .; *(.bss*) *(.sbss*) *(COMMON)
+    . = ALIGN(32); __bss_end = .;
+  } > RAM
+  .arena (NOLOAD) : ALIGN(32) { __arena_start = .; *(.arena) . = ALIGN(32); __arena_end = .; } > RAM
+  .caller_io (NOLOAD) : ALIGN(32) { __io_start = .; *(.caller_io) . = ALIGN(32); __io_end = .; } > RAM
+  .test_stack (NOLOAD) : ALIGN(32) {
+    __test_stack_bottom = .; . += @STACK_BYTES@; __test_stack_top = .;
+    __zero_end = .;
+  } > RAM
+  .control_stack (NOLOAD) : ALIGN(32) {
+    __control_stack_bottom = .; . += @CONTROL_STACK_BYTES@; __control_stack_top = .;
+  } > RAM
+  __ram_start = ORIGIN(RAM); __ram_end = .;
+  /DISCARD/ : { *(.comment*) *(.note*) *(.eh_frame*) }
+  ASSERT(__code_end - __code_start <= @CODE_BYTES@, "code and data load exceed program budget")
+  ASSERT((__code_end - __code_start) + (__ram_end - __ram_start) <= @TOTAL_IMAGE_RAM_BYTES@, "whole emulator image exceeds physical RAM budget")
+  ASSERT(__ram_end <= ORIGIN(RAM) + LENGTH(RAM), "writable image exceeds configured RAM window")
+}

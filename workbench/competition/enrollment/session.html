@@ -1,0 +1,11 @@
+<section id="page-session" hidden>
+<h1>80 KiB 下的连续设备接入</h1>
+<p class="lead">同一签发身份复用公开矩阵；每次接入仍完整执行公钥签发、验签、封装与解封装。首次准备与结束清理均保留。</p>
+<div class="metrics"><article><small>完整应用预算</small><strong>80 KiB</strong><span>对象池、工作区、栈与全局区</span></article><article><small>连续接入</small><strong>200 次</strong><span>一套身份，逐次完成密码流程</span></article><article><small>缓存内容</small><strong>公开矩阵</strong><span>私密临时量逐次擦除</span></article></div>
+<article class="panel"><div class="form-grid two"><label>实现配置<select id="session-library"></select></label><label>ML-KEM / ML-DSA<select id="session-pair"><option value="44">512 / 44</option><option value="65">768 / 65</option><option value="87" selected>1024 / 87</option></select></label></div>
+<div class="actions"><button id="session-cold" class="primary">首次接入 1 次</button><button id="session-reuse" class="secondary">连续接入 200 次</button><button id="session-fresh" class="secondary">更换身份 200 次</button></div>
+<p id="session-scope" class="muted"></p><p class="muted">首次接入从空会话开始，包含身份生成和矩阵准备；连续接入准备一次；更换身份为每次接入重新生成身份与准备矩阵。每批结束均关闭会话并清空对象池。</p></article>
+<div id="session-result" aria-live="polite"><div class="empty"><span>等待运行</span><p>这里显示流程完成次数与清理检查。</p></div></div>
+<article class="panel"><h2>完整应用资源</h2><div id="session-resources"></div><p class="muted">现场采用相同库与固定对象池检查边界、结果和清理。栈及全局区预留来自相同应用的独立保护实验。</p></article>
+<article class="panel"><h2>独立性能实验</h2><div id="session-studies"></div><p class="muted">实验从空会话开始，包含准备、完整接入与最终关闭；对照采用同一应用流程和资源口径。现场运行结果可单独下载。</p></article>
+</section>

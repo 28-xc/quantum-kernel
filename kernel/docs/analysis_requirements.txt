@@ -1,0 +1,6 @@
+# Full scientific-data and figure reproduction; validated with Python 3.13.15.
+# SciPy 1.18.1 requires Python >=3.12. The bundled Windows runtime supplies
+# NumPy-only operation statistics through tools/offline_analysis.py.
+numpy==2.2.5
+scipy==1.18.1
+matplotlib==3.10.9

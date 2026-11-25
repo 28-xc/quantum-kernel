@@ -1,0 +1,8 @@
+/* Compile-only name interposition; upstream polyvec.c remains byte-identical. */
+#include "polyvec.h"
+void pqc_nonce_guard(unsigned nonce,unsigned width);
+void @PREFIX@_polyvecl_uniform_gamma1_original(polyvecl*v,const uint8_t seed[CRHBYTES],uint16_t nonce);
+void @PREFIX@_polyvecl_uniform_gamma1(polyvecl*v,const uint8_t seed[CRHBYTES],uint16_t nonce){
+ pqc_nonce_guard(nonce,L);
+ @PREFIX@_polyvecl_uniform_gamma1_original(v,seed,nonce);
+}

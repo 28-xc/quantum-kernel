@@ -1,0 +1,55 @@
+{
+  "production_bin_sha256": "5f312eb2c435e01983c177565d4c68e33c3ac031fc243e125182e7671ccee083",
+  "production_elf_sha256": "a691cea4fbc945a011b484631629e81991a1e2decd269bcacbb70e5b69bb03bd",
+  "entries": {},
+  "transport_sources": {
+    "s1": {
+      "sha256": "6eadc3ba221c962e2c0cc20ecf3761498bbda84a1a0570fa8b3fa17c34b77cf5",
+      "package_relative_path": "02_\u6d4b\u8bd5\u4ee3\u7801\u4e0e\u6570\u636e\\performance\\\u5b8c\u6574\u5bc6\u7801\u64cd\u4f5c\\STM32F407\\\u6b63\u5f0f\u56fa\u4ef6\u548c\u540c\u677f\u5bf9\u7167\\source\\5f312eb2c435e01983c177565d4c68e33c3ac031fc243e125182e7671ccee083\\src\\s1\\startup.S"
+    },
+    "s2": {
+      "sha256": "63966d091222081f87fda1daa84c20f398a0cbe803e1744063617bf4f79f0c05",
+      "package_relative_path": "02_\u6d4b\u8bd5\u4ee3\u7801\u4e0e\u6570\u636e\\performance\\\u5b8c\u6574\u5bc6\u7801\u64cd\u4f5c\\STM32F407\\\u6b63\u5f0f\u56fa\u4ef6\u548c\u540c\u677f\u5bf9\u7167\\source\\5f312eb2c435e01983c177565d4c68e33c3ac031fc243e125182e7671ccee083\\src\\s2\\board.c"
+    },
+    "s5": {
+      "sha256": "17ec6af8e27c004a9c3878078cbfe9509ebf55cd532b979185981f7e43066f0a",
+      "package_relative_path": "02_\u6d4b\u8bd5\u4ee3\u7801\u4e0e\u6570\u636e\\performance\\\u5b8c\u6574\u5bc6\u7801\u64cd\u4f5c\\STM32F407\\\u6b63\u5f0f\u56fa\u4ef6\u548c\u540c\u677f\u5bf9\u7167\\source\\5f312eb2c435e01983c177565d4c68e33c3ac031fc243e125182e7671ccee083\\src\\s5\\runtime.c"
+    },
+    "s6": {
+      "sha256": "71db7bba036766f92b1fecc79f5c41c45282015e3730d00841fbdd13f8f8a533",
+      "package_relative_path": "02_\u6d4b\u8bd5\u4ee3\u7801\u4e0e\u6570\u636e\\performance\\\u5b8c\u6574\u5bc6\u7801\u64cd\u4f5c\\STM32F407\\\u6b63\u5f0f\u56fa\u4ef6\u548c\u540c\u677f\u5bf9\u7167\\source\\5f312eb2c435e01983c177565d4c68e33c3ac031fc243e125182e7671ccee083\\src\\s6\\usb.c"
+    },
+    "s7": {
+      "sha256": "fddb30471b6f8df2fb6c8bd4893da5d6d33c9792af656cb9de397809a28dda24",
+      "package_relative_path": "02_\u6d4b\u8bd5\u4ee3\u7801\u4e0e\u6570\u636e\\performance\\\u5b8c\u6574\u5bc6\u7801\u64cd\u4f5c\\STM32F407\\\u6b63\u5f0f\u56fa\u4ef6\u548c\u540c\u677f\u5bf9\u7167\\source\\5f312eb2c435e01983c177565d4c68e33c3ac031fc243e125182e7671ccee083\\src\\s7\\usb_control.c"
+    },
+    "s8": {
+      "sha256": "90a490365ca6c895a48a467937f75bebe6ecd195cc093669126db0c415c2cbd2",
+      "package_relative_path": "02_\u6d4b\u8bd5\u4ee3\u7801\u4e0e\u6570\u636e\\performance\\\u5b8c\u6574\u5bc6\u7801\u64cd\u4f5c\\STM32F407\\\u6b63\u5f0f\u56fa\u4ef6\u548c\u540c\u677f\u5bf9\u7167\\source\\5f312eb2c435e01983c177565d4c68e33c3ac031fc243e125182e7671ccee083\\src\\s8\\usb_standard.c"
+    },
+    "s9": {
+      "sha256": "21155c042bbd9626e5349eef82b018d6eb00425d19bf757e8dbad287ef789ec3",
+      "package_relative_path": "02_\u6d4b\u8bd5\u4ee3\u7801\u4e0e\u6570\u636e\\performance\\\u5b8c\u6574\u5bc6\u7801\u64cd\u4f5c\\STM32F407\\\u6b63\u5f0f\u56fa\u4ef6\u548c\u540c\u677f\u5bf9\u7167\\source\\5f312eb2c435e01983c177565d4c68e33c3ac031fc243e125182e7671ccee083\\src\\s9\\usb_microsoft.c"
+    },
+    "s10": {
+      "sha256": "7cd3c4d55fbad837102683aa549470cbde4eeea0ceb570b9d74df5d5e0b80b99",
+      "package_relative_path": "02_\u6d4b\u8bd5\u4ee3\u7801\u4e0e\u6570\u636e\\performance\\\u5b8c\u6574\u5bc6\u7801\u64cd\u4f5c\\STM32F407\\\u6b63\u5f0f\u56fa\u4ef6\u548c\u540c\u677f\u5bf9\u7167\\source\\5f312eb2c435e01983c177565d4c68e33c3ac031fc243e125182e7671ccee083\\src\\s10\\usb_dwc_common.c"
+    },
+    "s11": {
+      "sha256": "6b015a3fc152e7c18b8825957068363ec18480f9681d6beab8565c0fc7820aa7",
+      "package_relative_path": "02_\u6d4b\u8bd5\u4ee3\u7801\u4e0e\u6570\u636e\\performance\\\u5b8c\u6574\u5bc6\u7801\u64cd\u4f5c\\STM32F407\\\u6b63\u5f0f\u56fa\u4ef6\u548c\u540c\u677f\u5bf9\u7167\\source\\5f312eb2c435e01983c177565d4c68e33c3ac031fc243e125182e7671ccee083\\src\\s11\\usb_f107.c"
+    },
+    "s12": {
+      "sha256": "212aa22dab1f9e84ddd002a3d71356d2a2ede8cb10ccee6e7e7a778302223c96",
+      "package_relative_path": "02_\u6d4b\u8bd5\u4ee3\u7801\u4e0e\u6570\u636e\\performance\\\u5b8c\u6574\u5bc6\u7801\u64cd\u4f5c\\STM32F407\\\u6b63\u5f0f\u56fa\u4ef6\u548c\u540c\u677f\u5bf9\u7167\\source\\5f312eb2c435e01983c177565d4c68e33c3ac031fc243e125182e7671ccee083\\src\\s12\\rcc_common_all.c"
+    }
+  },
+  "tag": "7e9ccb46fdb5f806e768c41dfbbfcb44",
+  "driver_sha256": "d37e5ed0c98b9bff347e10301b30ee9eb473ca369dd231317fcf597f69178f06",
+  "driver_elf_sha256": "eded43e74b1f261c20241635f9bfe4fd5e74a99d402d627a84de5a0e1f6a39a8",
+  "image_bytes": 10444,
+  "reserved_diagnostic_ram_bytes": 58400,
+  "source_sha256": "2379b50d089d9d1dc26ab6df3b08b8cc06bf0863208c44a4edf573609e023853",
+  "clock_hz": 168000000,
+  "notes": "RAM envelope and data are instrumentation overhead, not a complete API RAM-budget measurement"
+}

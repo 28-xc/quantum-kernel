@@ -1,0 +1,4 @@
+﻿libopencm3
+https://github.com/libopencm3/libopencm3
+a3977e14519e4cff8d1feb96445655465797908b
+源码文件保留原许可证头。COPYING.LGPL3 和 COPYING.GPL3 为上游许可文件。SOURCE.tsv 列出本目标编译所用的源码和头文件。

@@ -1,0 +1,3 @@
+# Preserve the installed distributions' verbatim notices, including whitespace.
+* -text -whitespace
+**/* -text -whitespace

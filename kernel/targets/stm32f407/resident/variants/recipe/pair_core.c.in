@@ -1,0 +1,58 @@
+/* ML-KEM coefficients are signed halfwords in the NTT vector; public matrix
+   coefficients and entries decoded from 12-bit strings range from 0 to 4095.
+   Each pair contributes two products. For K<=4, the signed 32-bit partial sum
+   is bounded by 4*2*4095*32768, leaving headroom for Montgomery reduction. */
+static inline uint32_t arm3329_load_pair(const int16_t *p) {
+    uint32_t pair; __asm__("ldr %0,[%1]" : "=r"(pair) : "r"(p) : "memory");
+    return pair;
+}
+static inline int32_t arm3329_mac_even(int32_t a,uint32_t x,uint32_t y,int16_t cached) {
+#if A127_DUAL_MAC
+    uint32_t v;int32_t out;
+    __asm__("pkhbt %0,%1,%2,lsl #16":"=r"(v):"r"(y),"r"((uint32_t)(uint16_t)cached));
+    __asm__("smlad %0,%1,%2,%3":"=r"(out):"r"(x),"r"(v),"r"(a));return out;
+#else
+    return a+(int16_t)x*(int32_t)(int16_t)y + (int16_t)(x>>16)*(int32_t)cached;
+#endif
+}
+static inline int32_t arm3329_mac_odd(int32_t a,uint32_t x,uint32_t y) {
+#if A127_DUAL_MAC
+    int32_t out;__asm__("smladx %0,%1,%2,%3":"=r"(out):"r"(x),"r"(y),"r"(a));return out;
+#else
+    return a+(int16_t)x*(int32_t)(int16_t)(y>>16)+(int16_t)(x>>16)*(int32_t)(int16_t)y;
+#endif
+}
+static inline uint32_t arm3329_decode_pair(const uint8_t *p){
+    uint32_t x=(uint32_t)p[0]|((uint32_t)p[1]<<8)|((uint32_t)p[2]<<16);
+    return (x&0xfffu)|((x>>12)<<16);
+}
+static void arm3329_dot(mlk_poly *out,const mlk_polyvec_LEVEL *a,const uint8_t *packed,
+                        const mlk_polyvec_LEVEL *b,const mlk_polyvec_mulcache_LEVEL *cache){
+    for(unsigned i=0;i<128u;i++){
+        int32_t e=0,o=0;
+#pragma clang loop unroll(full)
+        for(unsigned j=0;j<A127_K;j++){
+            uint32_t x=packed?arm3329_decode_pair(packed+384u*j+3u*i):arm3329_load_pair(a->vec[j].coeffs+2*i);
+            uint32_t y=arm3329_load_pair(b->vec[j].coeffs+2*i);
+            e=arm3329_mac_even(e,x,y,cache->vec[j].coeffs[i]);o=arm3329_mac_odd(o,x,y);
+        }
+        out->coeffs[2*i]=mlk_montgomery_reduce(e);out->coeffs[2*i+1]=mlk_montgomery_reduce(o);
+    }
+}
+static void arm3329_matrix_row(mlk_poly *out,void *workspace,const uint8_t rho[32],
+                       unsigned row,unsigned transpose,const mlk_polyvec_LEVEL *b,const mlk_polyvec_mulcache_LEVEL *cache){
+    int32_t *acc=workspace;
+    uint8_t seed[34];memcpy(seed,rho,32);
+    for(unsigned j=0;j<A127_K;j++){
+        seed[32]=(uint8_t)(transpose?row:j);seed[33]=(uint8_t)(transpose?j:row);
+        lc_base_mlk_poly_rej_uniform(out,seed);
+        for(unsigned i=0;i<128u;i++){
+            uint32_t x=arm3329_load_pair(out->coeffs+2*i),y=arm3329_load_pair(b->vec[j].coeffs+2*i);
+            int32_t e=j?acc[2*i]:0,o=j?acc[2*i+1]:0;
+            acc[2*i]=arm3329_mac_even(e,x,y,cache->vec[j].coeffs[i]);acc[2*i+1]=arm3329_mac_odd(o,x,y);
+        }
+    }
+    for(unsigned i=0;i<256u;i++)out->coeffs[i]=mlk_montgomery_reduce(acc[i]);
+    mlk_zeroize(seed,sizeof(seed));
+}
+

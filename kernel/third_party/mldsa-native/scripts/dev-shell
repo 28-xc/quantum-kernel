@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+# SPDX-License-Identifier: Apache-2.0 OR ISC OR MIT
+set -euo pipefail
+root="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd -P)"
+shell_name=default
+profile=
+nix_options=(--extra-experimental-features 'nix-command flakes')
+while (( $# )); do
+    case "$1" in
+        .\#*) shell_name="${1#.#}"; shift ;;
+        --quiet) nix_options+=("$1"); shift ;;
+        --profile) profile="${2:?missing profile path}"; shift 2 ;;
+        --access-tokens) nix_options+=(--option access-tokens "${2:?missing tokens}"); shift 2 ;;
+        --experimental-features|--extra-experimental-features) nix_options+=("$1" "${2:?missing features}"); shift 2 ;;
+        --command|-c) shift; (( $# )) || { echo 'Missing command' >&2; exit 2; }; break ;;
+        *) echo "Unknown development shell option: $1" >&2; exit 2 ;;
+    esac
+done
+[[ "$shell_name" =~ ^[[:alnum:]_-]+$ ]] || { echo 'Invalid development shell name' >&2; exit 2; }
+selection=("$root/shell.nix" --argstr name "$shell_name")
+if [[ -z "${NIX_BUILD_SHELL+x}" ]]; then
+    pinned_nixpkgs="$(nix "${nix_options[@]}" eval --raw "$root#pinnedNixpkgs")"
+    selection+=(-I "nixpkgs=$pinned_nixpkgs")
+fi
+if [[ -n "$profile" ]]; then
+    nix-build "${selection[@]}" "${nix_options[@]}" --out-link "$profile" >/dev/null
+fi
+if (( $# )); then
+    printf -v cmd '%q ' "$@"
+    exec nix-shell "${selection[@]}" "${nix_options[@]}" --run "exec $cmd"
+fi
+exec nix-shell "${selection[@]}" "${nix_options[@]}"
